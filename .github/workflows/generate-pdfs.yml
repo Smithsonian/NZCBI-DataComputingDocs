@@ -1,0 +1,101 @@
+name: Generate PDFs from Markdown
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-pdfs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-extra fonts-dejavu
+      
+      - name: Create output directory
+        run: mkdir -p docs/pdfs tmp
+      
+      - name: Generate individual PDFs
+        run: |
+          cd docs
+          for file in data-management.md; do
+            if [ -f "$file" ]; then
+              output_name=$(basename "$file" .md).pdf
+              
+              # Convert HTML img tags to Markdown syntax, then pipe to pandoc
+              sed -E 's/<img src="([^"]+)"[^>]*>/![](\1)/g' "$file" | \
+              pandoc \
+                -o "pdfs/$output_name" \
+                --pdf-engine=xelatex \
+                -V geometry:margin=1in \
+                -V mainfont="DejaVu Sans" \
+                -V sansfont="DejaVu Sans" \
+                -V monofont="DejaVu Sans Mono" \
+                -V colorlinks=true \
+                -V linkcolor=blue \
+                -V urlcolor=blue \
+                --resource-path=.:images
+              
+              echo "Generated $output_name"
+            fi
+          done
+      
+      - name: Generate combined PDF
+        run: |
+          cd docs
+          files=(
+		"data-management.md"
+          )
+          
+          first=true
+          for file in "${files[@]}"; do
+            if [ -f "$file" ]; then
+              if [ "$first" = true ]; then
+                first=false
+              else
+                echo -e '\n\\newpage\n'
+              fi
+              sed -E 's/<img src="([^"]+)"[^>]*>/![](\1)/g' "$file"
+            fi
+          done > ../tmp/combined.md
+          
+          pandoc ../tmp/combined.md \
+            -o "pdfs/Data-Technology-guide.pdf" \
+            --pdf-engine=xelatex \
+            -V geometry:margin=1in \
+            -V mainfont="DejaVu Sans" \
+            -V sansfont="DejaVu Sans" \
+            -V monofont="DejaVu Sans Mono" \
+            -V colorlinks=true \
+            -V linkcolor=blue \
+            -V urlcolor=blue \
+            --resource-path=.:images \
+            --toc \
+            --toc-depth=2 \
+            -V toc-title="Table of Contents"
+          
+          echo "Generated Data-Technology-guide.pdf"
+      
+      - name: Cleanup
+        run: rm -rf tmp
+      
+      - name: Commit PDFs to repository
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/pdfs/*.pdf
+          git diff --staged --quiet || git commit -m "Auto-generate PDFs from Markdown [skip ci]"
+          git pull --rebase
+          git push

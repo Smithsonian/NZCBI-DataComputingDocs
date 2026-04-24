@@ -1,0 +1,119 @@
+/* =========================================
+   Smithsonian Ecology & National Zoo Style
+   For MkDocs Read the Docs Theme
+   ========================================= */
+
+/* ---- Base Typography ---- */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #231f20; /* Smithsonian dark gray */
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ---- Headings ---- */
+h1, h2, h3, h4 {
+  color: #00458A; /* Smithsonian / Zoo deep blue */
+  font-weight: 600;
+}
+
+h1 {
+  border-bottom: 4px solid #F7CE17; /* Smithsonian gold */
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  border-left: 6px solid #1891CB; /* Smithsonian sky blue */
+  padding-left: 0.5em;
+}
+
+/* ---- Links ---- */
+a {
+  color: #1891CB;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00458A;
+  text-decoration: underline;
+}
+
+/* ---- Navigation Sidebar ---- */
+.wy-side-nav-search {
+  background-color: #00458A; /* Zoo / Smithsonian blue */
+}
+
+.wy-side-nav-search input[type="text"] {
+  border-radius: 4px;
+  border: none;
+}
+
+.wy-nav-side {
+  background-color: #002f5f; /* darker blue */
+}
+
+.wy-menu-vertical li.current > a {
+  background-color: #1891CB;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ---- Content Area ---- */
+.wy-nav-content {
+  max-width: 1100px;
+  background-color: #ffffff;
+}
+
+/* ---- Admonitions (Notes, Warnings) ---- */
+.admonition {
+  border-left: 6px solid #1891CB;
+}
+
+.admonition.note {
+  background-color: #f0f8fc;
+}
+
+.admonition.warning {
+  border-left-color: #F47920; /* Smithsonian orange */
+  background-color: #fff4ec;
+}
+
+/* ---- Code Blocks ---- */
+code, pre {
+  background-color: #f5f7f9;
+  border: 1px solid #e1e4e5;
+  color: #231f20;
+}
+
+pre code {
+  font-size: 0.9em;
+}
+
+/* ---- Tables ---- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  background-color: #00458A;
+  color: white;
+}
+
+table td, table th {
+  border: 1px solid #dcdcdc;
+  padding: 0.5em;
+}
+
+/* ---- Footer ---- */
+footer {
+  border-top: 2px solid #F7CE17;
+  color: #666666;
+  font-size: 0.85em;
+}
+
+/* ---- Images ---- */
+img {
+  border-radius: 4px;
+  max-width: 100%;
+}
