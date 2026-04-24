@@ -1,1 +1,92 @@
+site_name: Research Computing & Data Services
+site_description: Documentation for data management, file transfer, and advanced computing services
+site_author: Smithsonian Institution
+repo_name: Smithsonian/globus-docs
+repo_url: https://github.com/Smithsonian/globus-docs
+edit_uri: edit/main/docs/
 
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+
+plugins:
+  - search
+  - mkdocstrings
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+      - Overview: getting-started/overview.md
+      - Accounts & Access: getting-started/accounts-access.md
+      - Authentication & Identity: getting-started/authentication.md
+      - User Responsibilities: getting-started/user-responsibilities.md
+
+  - Data Management:
+      - Introduction: data-management/index.md
+      - Data Organization & Naming: data-management/organization.md
+      - Metadata & Documentation: data-management/metadata.md
+      - Data Storage Options: data-management/storage.md
+      - Data Sharing & Access Control: data-management/sharing.md
+      - Backup & Preservation: data-management/backup-preservation.md
+
+  - File Transfer & Globus:
+      - Introduction to Globus: globus/index.md
+      - Endpoints & Collections: globus/endpoints.md
+      - Data Transfer Workflows: globus/workflows.md
+      - Automation & CLI: globus/automation-cli.md
+      - Security & Encryption: globus/security.md
+      - Troubleshooting Transfers: globus/troubleshooting.md
+
+  - High Performance Computing:
+      - HPC Overview: hpc/index.md
+      - Clusters & Architecture: hpc/architecture.md
+      - Job Scheduling & Queues: hpc/schedulers.md
+      - Software Environments & Modules: hpc/software.md
+      - Data Movement to/from HPC: hpc/data-movement.md
+      - Performance Optimization: hpc/performance.md
+
+  - Computing Standards & Policies:
+      - Overview: standards/index.md
+      - Data Standards & Formats: standards/data-formats.md
+      - Security Standards: standards/security.md
+      - Compliance & Governance: standards/compliance.md
+      - Reproducibility & FAIR Principles: standards/fair-reproducibility.md
+
+  - Data Life Cycle:
+      - Life Cycle Overview: lifecycle/index.md
+      - Planning & Acquisition: lifecycle/planning.md
+      - Active Use & Analysis: lifecycle/analysis.md
+      - Publication & Sharing: lifecycle/publication.md
+      - Archiving & Preservation: lifecycle/archiving.md
+      - Decommissioning & Disposal: lifecycle/disposal.md
+
+  - Reference:
+      - Glossary: reference/glossary.md
+      - FAQs: reference/faqs.md
+      - Service Limits & Quotas: reference/limits.md
+      - Contact & Support: reference/support.md
