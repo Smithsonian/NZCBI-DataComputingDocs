@@ -1,8 +1,14 @@
+---
+hide:
+  - toc
+---
+
 <div class="hero" markdown>
 
 # NZCBI Data and Computing Reference Documentation
 
-<p class="subtitle">Practical guides for managing research data and using computing resources at the Smithsonian's National Zoo and Conservation Biology Institute.</p>
+Practical guides for managing research data and using computing resources at the Smithsonian's National Zoo and Conservation Biology Institute.
+{: .subtitle }
 
 Whether you're working with camera trap imagery, acoustic recordings, genomic sequences, GIS layers, or video from animal behavior studies, these guides cover how to organize, store, share, and compute on your data using NZCBI and Smithsonian-supported systems.
 
@@ -60,7 +66,7 @@ Whether you're working with camera trap imagery, acoustic recordings, genomic se
 | NZCBI website | [nationalzoo.si.edu](https://nationalzoo.si.edu/) |
 | Smithsonian Data Management Guidance | [library.si.edu/research/data-management](https://library.si.edu/research/data-management) |
 | Globus Web App | [app.globus.org](https://app.globus.org/) |
-| Globus at the Smithsonian | [https://smithsonian.github.io/globus-docs/](https://smithsonian.github.io/globus-docs/) |
+| Globus at the Smithsonian (sister docs) | [https://smithsonian.github.io/globus-docs/](https://smithsonian.github.io/globus-docs/) |
 
 ---
 

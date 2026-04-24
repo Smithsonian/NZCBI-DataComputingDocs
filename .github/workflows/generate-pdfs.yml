@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'docs/**'
+      - '!docs/pdfs/**'      # don't re-trigger on our own output
   workflow_dispatch:
 
 permissions:
@@ -14,53 +15,83 @@ permissions:
 jobs:
   build-pdfs:
     runs-on: ubuntu-latest
-    
+
+    env:
+      # Guides to include, in order. Add new .md files here as they're written.
+      # This list drives both the per-guide PDFs and the combined PDF.
+      GUIDES: |
+        data-management.md
+
+      # Shared pandoc flags. -V linkcolor uses oxford-blue (NZCBI brand) in hex.
+      # If brand exactness in PDFs matters, swap `DejaVu Sans` for `Source Sans Pro`
+      # after adding a step to install it (e.g. via `fonts-open-sans` or a direct
+      # download from Google Fonts). DejaVu ships with texlive-fonts-recommended.
+      PANDOC_COMMON_FLAGS: >-
+        --pdf-engine=xelatex
+        -V geometry:margin=1in
+        -V mainfont="DejaVu Sans"
+        -V sansfont="DejaVu Sans"
+        -V monofont="DejaVu Sans Mono"
+        -V colorlinks=true
+        -V linkcolor="[HTML]{002554}"
+        -V urlcolor="[HTML]{002554}"
+        --resource-path=.:images
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+        with:
+          fetch-depth: 0      # full history so `git pull --rebase` is safe
+
       - name: Install Pandoc and LaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-extra fonts-dejavu
-      
+          sudo apt-get install -y \
+            pandoc \
+            texlive-xetex \
+            texlive-fonts-recommended \
+            texlive-latex-extra \
+            fonts-dejavu
+
       - name: Create output directory
         run: mkdir -p docs/pdfs tmp
-      
+
       - name: Generate individual PDFs
         run: |
           cd docs
-          for file in data-management.md; do
+          # Read the GUIDES env var into a bash array (one filename per line).
+          readarray -t guides <<< "$GUIDES"
+          for file in "${guides[@]}"; do
+            # Skip blank lines from the env-var heredoc.
+            [ -z "$file" ] && continue
+
             if [ -f "$file" ]; then
               output_name=$(basename "$file" .md).pdf
-              
-              # Convert HTML img tags to Markdown syntax, then pipe to pandoc
+
+              # Rewrite HTML <img src="..."> tags to markdown ![](...) syntax so
+              # xelatex can resolve them through --resource-path. Then pipe into
+              # pandoc; using stdin avoids writing a temp file per guide.
               sed -E 's/<img src="([^"]+)"[^>]*>/![](\1)/g' "$file" | \
-              pandoc \
-                -o "pdfs/$output_name" \
-                --pdf-engine=xelatex \
-                -V geometry:margin=1in \
-                -V mainfont="DejaVu Sans" \
-                -V sansfont="DejaVu Sans" \
-                -V monofont="DejaVu Sans Mono" \
-                -V colorlinks=true \
-                -V linkcolor=blue \
-                -V urlcolor=blue \
-                --resource-path=.:images
-              
+                pandoc -o "pdfs/$output_name" $PANDOC_COMMON_FLAGS
+
               echo "Generated $output_name"
+            else
+              echo "::warning::Listed guide not found: $file"
             fi
           done
-      
+
       - name: Generate combined PDF
         run: |
           cd docs
-          files=(
-		"data-management.md"
-          )
-          
+          readarray -t guides <<< "$GUIDES"
+
+          # Concatenate all guides into one markdown file, separated by LaTeX
+          # page breaks. The \newpage between files becomes a real page break
+          # in the final PDF via pandoc's raw_tex extension (on by default).
           first=true
-          for file in "${files[@]}"; do
+          for file in "${guides[@]}"; do
+            [ -z "$file" ] && continue
+
             if [ -f "$file" ]; then
               if [ "$first" = true ]; then
                 first=false
@@ -70,32 +101,27 @@ jobs:
               sed -E 's/<img src="([^"]+)"[^>]*>/![](\1)/g' "$file"
             fi
           done > ../tmp/combined.md
-          
+
           pandoc ../tmp/combined.md \
-            -o "pdfs/Data-Technology-guide.pdf" \
-            --pdf-engine=xelatex \
-            -V geometry:margin=1in \
-            -V mainfont="DejaVu Sans" \
-            -V sansfont="DejaVu Sans" \
-            -V monofont="DejaVu Sans Mono" \
-            -V colorlinks=true \
-            -V linkcolor=blue \
-            -V urlcolor=blue \
-            --resource-path=.:images \
+            -o "pdfs/NZCBI-Data-Computing-Guide.pdf" \
+            $PANDOC_COMMON_FLAGS \
             --toc \
             --toc-depth=2 \
             -V toc-title="Table of Contents"
-          
-          echo "Generated Data-Technology-guide.pdf"
-      
+
+          echo "Generated NZCBI-Data-Computing-Guide.pdf"
+
       - name: Cleanup
         run: rm -rf tmp
-      
+
       - name: Commit PDFs to repository
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add docs/pdfs/*.pdf
+          # [skip ci] is kept as a belt-and-suspenders guard in addition to the
+          # path-exclude on the trigger. If the trigger ever changes, this still
+          # prevents a loop.
           git diff --staged --quiet || git commit -m "Auto-generate PDFs from Markdown [skip ci]"
           git pull --rebase
           git push
