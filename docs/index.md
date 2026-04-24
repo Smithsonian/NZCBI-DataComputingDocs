@@ -21,6 +21,7 @@ Whether you're working with camera trap imagery, acoustic recordings, genomic se
 | I want to&hellip; | Start here |
 |---|---|
 | **Organize my project data** &mdash; naming conventions, folder structure, metadata, backup strategy | [Guide 1: Data Management Basics](data-management.md) |
+| **Run computational analyses on Hydra** &mdash; log in, submit jobs, monitor progress, manage data | [Guide 2: Getting Started on Hydra](hydra.md) |
 | **More guides** &mdash; coming soon | &mdash; |
 
 !!! note "This site is actively being built out"
@@ -48,9 +49,13 @@ Whether you're working with camera trap imagery, acoustic recordings, genomic se
 
 </div>
 
-## Getting Help
+<div class="table-grid" markdown>
 
-<!-- TODO: replace the placeholder contacts below with real NZCBI addresses and system names before publishing -->
+<div markdown>
+
+### Getting Help
+
+<!-- TODO: replace the placeholder contact below with a real NZCBI address before publishing -->
 
 | Topic | Contact |
 |---|---|
@@ -59,14 +64,21 @@ Whether you're working with camera trap imagery, acoustic recordings, genomic se
 | Globus file transfers | [SI-Globus@si.edu](mailto:SI-Globus@si.edu) |
 | This documentation &mdash; corrections or suggestions | [Open an issue](https://github.com/Smithsonian/NZCBI-DataComputingDocs/issues) |
 
-## Quick Links
+</div>
+
+<div markdown>
+
+### Quick Links
 
 | Resource | Link |
 |---|---|
-| NZCBI website | [nationalzoo.si.edu](https://nationalzoo.si.edu/) |
 | Smithsonian Data Management Guidance | [library.si.edu/research/data-management](https://library.si.edu/research/data-management) |
 | Globus Web App | [app.globus.org](https://app.globus.org/) |
-| Globus at the Smithsonian (sister docs) | [https://smithsonian.github.io/globus-docs/](https://smithsonian.github.io/globus-docs/) |
+| Globus at the Smithsonian | [smithsonian.github.io/globus-docs](https://smithsonian.github.io/globus-docs/) |
+
+</div>
+
+</div>
 
 ---
 

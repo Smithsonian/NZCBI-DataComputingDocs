@@ -36,6 +36,7 @@ theme:
 nav:
   - Home: index.md
   - "Guide 1: Data Management Basics": data-management.md
+  - "Guide 2: Getting Started on Hydra": hydra.md
 
 markdown_extensions:
   - toc:

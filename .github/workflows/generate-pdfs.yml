@@ -28,7 +28,7 @@ jobs:
       - name: Generate individual PDFs
         run: |
           cd docs
-          for file in data-management.md; do
+          for file in data-management.md hydra.md; do
             if [ -f "$file" ]; then
               output_name=$(basename "$file" .md).pdf
 
@@ -55,6 +55,7 @@ jobs:
           cd docs
           files=(
             "data-management.md"
+            "hydra.md"
           )
 
           first=true

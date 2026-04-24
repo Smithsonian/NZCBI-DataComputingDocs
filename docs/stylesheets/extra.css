@@ -224,9 +224,10 @@ body,
   color: var(--nzcbi-sap-green);
 }
 
-/* Center the home page content */
+/* Content max-width — bumped from 900px to 1200px so tables and the hero
+   have more room. Adjust if prose feels too wide on very large monitors. */
 .md-content__inner {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -291,20 +292,20 @@ body,
   letter-spacing: 0;
 }
 
-/* Hide TOC on home page */
-.md-sidebar--secondary {
-  display: none;
-}
-
 /* Full-width content on home page */
 .md-content {
   max-width: 100%;
 }
 
-/* Two-column layout for tables */
+/* Two-column layout for stacked sections — wraps two markdown blocks
+   into a side-by-side grid. Use:
+   <div class="table-grid" markdown>
+     <div markdown>...</div>
+     <div markdown>...</div>
+   </div> */
 .table-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
 }
