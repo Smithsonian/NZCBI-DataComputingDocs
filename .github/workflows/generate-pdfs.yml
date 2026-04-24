@@ -1,42 +1,26 @@
 name: Generate PDFs from Markdown
-
 on:
   push:
     branches:
       - main
     paths:
       - 'docs/**'
-      - '!docs/pdfs/**'      # don't re-trigger on our own output
+      - '!docs/pdfs/**'
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   build-pdfs:
     runs-on: ubuntu-latest
 
-    env:
-      # Guides to include, in order. Add new .md files here as they're written.
-      # This list drives both the per-guide PDFs and the combined PDF.
-      GUIDES: |
-        data-management.md
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0      # full history so `git pull --rebase` is safe
 
       - name: Install Pandoc and LaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y \
-            pandoc \
-            texlive-xetex \
-            texlive-fonts-recommended \
-            texlive-latex-extra \
-            fonts-dejavu
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-extra fonts-dejavu
 
       - name: Create output directory
         run: mkdir -p docs/pdfs tmp
@@ -44,49 +28,37 @@ jobs:
       - name: Generate individual PDFs
         run: |
           cd docs
-          # Read the GUIDES env var into a bash array (one filename per line).
-          readarray -t guides <<< "$GUIDES"
-          for file in "${guides[@]}"; do
-            # Skip blank lines from the env-var heredoc.
-            [ -z "$file" ] && continue
-
+          for file in data-management.md; do
             if [ -f "$file" ]; then
               output_name=$(basename "$file" .md).pdf
 
-              # Rewrite HTML <img src="..."> tags to markdown ![](...) syntax so
-              # xelatex can resolve them through --resource-path. Then pipe into
-              # pandoc; using stdin avoids writing a temp file per guide.
+              # Convert HTML img tags to Markdown syntax, then pipe to pandoc
               sed -E 's/<img src="([^"]+)"[^>]*>/![](\1)/g' "$file" | \
-                pandoc \
-                  -o "pdfs/$output_name" \
-                  --pdf-engine=xelatex \
-                  -V geometry:margin=1in \
-                  -V mainfont="DejaVu Sans" \
-                  -V sansfont="DejaVu Sans" \
-                  -V monofont="DejaVu Sans Mono" \
-                  -V colorlinks=true \
-                  -V linkcolor="[HTML]{002554}" \
-                  -V urlcolor="[HTML]{002554}" \
-                  --resource-path=.:images
+              pandoc \
+                -o "pdfs/$output_name" \
+                --pdf-engine=xelatex \
+                -V geometry:margin=1in \
+                -V mainfont="DejaVu Sans" \
+                -V sansfont="DejaVu Sans" \
+                -V monofont="DejaVu Sans Mono" \
+                -V colorlinks=true \
+                -V linkcolor="[HTML]{002554}" \
+                -V urlcolor="[HTML]{002554}" \
+                --resource-path=.:images
 
               echo "Generated $output_name"
-            else
-              echo "::warning::Listed guide not found: $file"
             fi
           done
 
       - name: Generate combined PDF
         run: |
           cd docs
-          readarray -t guides <<< "$GUIDES"
+          files=(
+            "data-management.md"
+          )
 
-          # Concatenate all guides into one markdown file, separated by LaTeX
-          # page breaks. The \newpage between files becomes a real page break
-          # in the final PDF via pandoc's raw_tex extension (on by default).
           first=true
-          for file in "${guides[@]}"; do
-            [ -z "$file" ] && continue
-
+          for file in "${files[@]}"; do
             if [ -f "$file" ]; then
               if [ "$first" = true ]; then
                 first=false
@@ -122,9 +94,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add docs/pdfs/*.pdf
-          # [skip ci] is kept as a belt-and-suspenders guard in addition to the
-          # path-exclude on the trigger. If the trigger ever changes, this still
-          # prevents a loop.
           git diff --staged --quiet || git commit -m "Auto-generate PDFs from Markdown [skip ci]"
           git pull --rebase
           git push
