@@ -1,0 +1,79 @@
+site_name: Ecology & Environmental Science Cyberinfrastructure
+site_description: Data management, computing, and file transfer guidance for Smithsonian ecology research
+site_author: Smithsonian Institution
+repo_url: https://github.com/Smithsonian/globus-docs
+repo_name: Smithsonian/globus-docs
+
+theme:
+  name: readthedocs
+  navigation_depth: 4
+
+nav:
+  - Home: index.md
+
+  - Data Management:
+      - Overview: data-management/index.md
+      - Organization & Naming: data-management/organization.md
+      - Metadata Standards: data-management/metadata.md
+      - Storage & Backup: data-management/storage.md
+      - Sharing & Access: data-management/sharing.md
+      - Sensitive Data: data-management/sensitive-data.md
+
+  - Data Life Cycle:
+      - Overview: data-lifecycle/index.md
+      - Planning: data-lifecycle/planning.md
+      - Processing & Analysis: data-lifecycle/processing.md
+      - Preservation: data-lifecycle/preservation.md
+      - Publication & Reuse: data-lifecycle/reuse.md
+      - Disposal: data-lifecycle/disposal.md
+
+  - File Transfer:
+      - Overview: file-transfer/index.md
+      - Globus Basics: file-transfer/globus-basics.md
+      - Globus Connect: file-transfer/globus-connect.md
+      - SFTP & SCP: file-transfer/sftp-scp.md
+      - rsync: file-transfer/rsync.md
+      - Performance: file-transfer/performance.md
+
+  - High Performance Computing:
+      - Overview: hpc/index.md
+      - Architecture: hpc/architecture.md
+      - Storage: hpc/storage.md
+      - Data Movement: hpc/data-movement.md
+      - Workflows: hpc/workflows.md
+      - Globus on HPC: hpc/globus-hpc.md
+
+  - Computing Standards:
+      - Overview: standards/index.md
+      - Best Practices: standards/best-practices.md
+      - Data Standards: standards/data-standards.md
+      - Security: standards/security.md
+      - FAIR Principles: standards/fair.md
+
+  - Ecology Workflows:
+      - Field Data → Hydra: workflows/field-to-hydra.md
+      - Sensor Pipelines: workflows/sensor-pipelines.md
+      - Genomics & eDNA: workflows/genomics-workflow.md
+
+  - Data Management Plan (DMP):
+      - Overview: dmp/index.md
+      - Smithsonian DMP Template: dmp/smithsonian-dmp-template.md
+
+  - Advanced:
+      - Globus Flows: advanced/globus-flows.md
+      - APIs & CLI: advanced/apis-cli.md
+      - Collaboration: advanced/collaboration.md
+
+  - Reference:
+      - Glossary: reference/glossary.md
+      - Resources: reference/resources.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - tables
+  - footnotes
+  - codehilite
+  - pymdownx.superfences
+``
