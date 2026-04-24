@@ -1,6 +1,9 @@
 site_name: NZCBI Data and Computing Reference Documentation
+site_description: Data management and computing reference documentation for researchers and staff at the Smithsonian's National Zoo and Conservation Biology Institute
+site_url: https://smithsonian.github.io/NZCBI-DataComputingDocs/
 repo_url: https://github.com/Smithsonian/NZCBI-DataComputingDocs
 repo_name: Smithsonian/NZCBI-DataComputingDocs
+use_directory_urls: false
 
 theme:
   name: material
@@ -18,7 +21,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    text: Inter
+    text: Source Sans Pro
     code: JetBrains Mono
   features:
     - navigation.instant
@@ -32,7 +35,7 @@ theme:
 
 nav:
   - Home: index.md
-  - Guide 1: Data Management Basics: data-management.md
+  - "Guide 1: Data Management Basics": data-management.md
 
 markdown_extensions:
   - toc:
@@ -61,7 +64,7 @@ plugins:
 extra:
   generator: false
 
-copyright: '<a href="https://www.si.edu">Smithsonian Institution</a> · <a href="https://www.si.edu/privacy">Privacy</a> · <a href="https://www.si.edu/termsofuse">Terms of Use</a>'
+copyright: 'NZCBI &middot; <a href="https://www.si.edu">Smithsonian Institution</a> &middot; <a href="https://www.si.edu/privacy">Privacy</a> &middot; <a href="https://www.si.edu/termsofuse">Terms of Use</a>'
 
 extra_css:
   - stylesheets/extra.css

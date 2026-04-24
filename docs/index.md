@@ -1,200 +1,67 @@
-\# Data \& Computing for Ecology at the Smithsonian
+<div class="hero" markdown>
 
+# NZCBI Data and Computing Reference Documentation
 
+<p class="subtitle">Practical guides for managing research data and using computing resources at the Smithsonian's National Zoo and Conservation Biology Institute.</p>
 
-This site provides practical guidance for \*\*ecology and environmental science research\*\*
+Whether you're working with camera trap imagery, acoustic recordings, genomic sequences, GIS layers, or video from animal behavior studies, these guides cover how to organize, store, share, and compute on your data using NZCBI and Smithsonian-supported systems.
 
-using Smithsonian computing and storage infrastructure, including:
+[Get started with data management :material-arrow-right:](data-management.md){ .md-button .md-button--primary }
 
+</div>
 
+## Which Guide Do I Need?
 
-\- \*\*Hydra\*\* – institutional storage and high‑performance computing
+| I want to&hellip; | Start here |
+|---|---|
+| **Organize my project data** &mdash; naming conventions, folder structure, metadata, backup strategy | [Guide 1: Data Management Basics](data-management.md) |
+| **More guides** &mdash; coming soon | &mdash; |
 
-\- \*\*Globus\*\* – secure, reliable data transfer and sharing
+!!! note "This site is actively being built out"
+    We're rolling out documentation for NZCBI research computing topics one guide at a time. If there's something specific you'd like covered, [open an issue](https://github.com/Smithsonian/NZCBI-DataComputingDocs/issues) or email the contact below.
 
+## Who This Documentation Is For
 
+<div class="grid cards" markdown>
 
-Whether you are moving field data, processing sensor streams,
+-   :material-school:{ .lg } **Undergraduate interns**
 
-running genomics analyses, or sharing results with collaborators,
+    New to research computing. Start with the basics and build up.
 
-these guides will help you use Smithsonian systems effectively.
+-   :material-flask:{ .lg } **Graduate students & postdocs**
 
+    Detailed procedures, conventions, and how to plug into NZCBI systems.
 
+-   :material-clipboard-check:{ .lg } **Staff researchers**
 
-\---
+    Quick reference for day-to-day workflows and troubleshooting.
 
+-   :material-account-supervisor:{ .lg } **Principal Investigators**
 
+    Policies, compliance, and strategic data-management planning.
 
-\## Who Is This For?
+</div>
 
+## Getting Help
 
+<!-- TODO: replace the placeholder contacts below with real NZCBI addresses and system names before publishing -->
 
-\- Ecologists and environmental scientists
+| Topic | Contact |
+|---|---|
+| General data management questions | <!-- TODO: e.g. NZCBI-Data@si.edu --> |
+| Smithsonian HPC (Hydra) accounts and support | [SI-HPC@si.edu](mailto:SI-HPC@si.edu) |
+| Globus file transfers | [SI-Globus@si.edu](mailto:SI-Globus@si.edu) |
+| This documentation &mdash; corrections or suggestions | [Open an issue](https://github.com/Smithsonian/NZCBI-DataComputingDocs/issues) |
 
-\- Field researchers and technicians
+## Quick Links
 
-\- Lab and data managers
+| Resource | Link |
+|---|---|
+| NZCBI website | [nationalzoo.si.edu](https://nationalzoo.si.edu/) |
+| Smithsonian Data Management Guidance | [library.si.edu/research/data-management](https://library.si.edu/research/data-management) |
+| Globus Web App | [app.globus.org](https://app.globus.org/) |
+| Globus at the Smithsonian | [https://smithsonian.github.io/globus-docs/](https://smithsonian.github.io/globus-docs/) |
 
-\- Analysts, postdocs, and graduate students
+---
 
-\- External collaborators working with Smithsonian teams
-
-
-
-\---
-
-
-
-\## Start Here: Which Guide Do I Need?
-
-
-
-\### I want to…
-
-
-
-\#### Organize and protect my research data
-
-➡ \*\*Guide 1: Data Management Basics\*\*
-
-
-
-Learn how to:
-
-\- Organize field, lab, and sensor data
-
-\- Use metadata standards (Darwin Core, EML)
-
-\- Store data safely on Hydra
-
-\- Plan for long‑term preservation
-
-
-
-\---
-
-
-
-\#### Move data to or from the Smithsonian
-
-➡ \*\*Guide 2: File Transfer with Globus\*\*
-
-
-
-Learn how to:
-
-\- Transfer large datasets from field laptops
-
-\- Share data with external collaborators
-
-\- Use Globus Connect Personal and Server
-
-\- Avoid common transfer failures
-
-
-
-\---
-
-
-
-\#### Use Hydra for large analyses or genomics
-
-➡ \*\*Guide 3: HPC \& Hydra\*\*
-
-
-
-Learn how to:
-
-\- Understand Hydra storage and compute structure
-
-\- Move data onto and off of HPC systems
-
-\- Manage scratch vs project storage
-
-\- Use Globus with HPC workflows
-
-
-
-\---
-
-
-
-\#### Understand end‑to‑end ecology workflows
-
-➡ \*\*Guide 4: Ecology Workflows\*\*
-
-
-
-Examples include:
-
-\- Field data → Hydra → analysis → sharing
-
-\- Long‑term sensor pipelines
-
-\- Genomics and eDNA workflows
-
-\- Multi‑institution collaborations
-
-
-
-\---
-
-
-
-\#### Write a Data Management Plan (DMP)
-
-➡ \*\*Guide 5: Data Management Plan (DMP)\*\*
-
-
-
-Use a Smithsonian‑aligned, ecology‑focused template suitable for:
-
-\- NSF proposals
-
-\- Internal review
-
-\- Project documentation
-
-
-
-\---
-
-
-
-\## Key Principles
-
-
-
-\- \*\*Use institutional systems\*\* (Hydra, Globus)
-
-\- \*\*Treat raw data as immutable\*\*
-
-\- \*\*Document methods and metadata early\*\*
-
-\- \*\*Automate transfers where possible\*\*
-
-\- \*\*Plan for sharing and preservation\*\*
-
-
-
-\---
-
-
-
-\## Need Help?
-
-
-
-\- Globus Web App: https://app.globus.org
-
-\- Globus Documentation: https://docs.globus.org
-
-\- Smithsonian OCIO / HPC Support (internal)
-
-
-
-Start with \*\*Guide 1\*\* if you are new, then follow the guides as your workflow evolves.
-
-``
-
+*Maintained by NZCBI &middot; Last updated: <!-- TODO: date --> &middot; Submit corrections via GitHub issues or the contacts above.*
