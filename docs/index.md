@@ -22,7 +22,7 @@ Whether you're working with camera trap imagery, acoustic recordings, genomic se
 |---|---|
 | **Organize my project data** &mdash; naming conventions, folder structure, metadata, backup strategy | [Guide 1: Data Management Basics](data-management.md) |
 | **Run computational analyses on Hydra** &mdash; log in, submit jobs, monitor progress, manage data | [Guide 2: Getting Started on Hydra](hydra.md) |
-| **Develop data computing standards** &mdash; enable interoperatiliby, improve efficiency, and foster collaboration | [Guide 3: Computing Standards](computing-standards.md) |
+| **Develop data computing standards** &mdash; enable interoperatiliby, improve efficiency, and foster collaboration | [Guide 3: Data Computing Standards](computing-standards.md) |
 | **Transfer files to external collaborators** &mdash; secure, high-performance data transfers and automation | [Guide 4: Using Globus](globus-file-transfer.md) |
 | **Learn about th data lifecycle** &mdash; plan, create/collect, store, use, share, archive/destroy | [Guide 5: Understanding the Data Lifecycle](data-lifecycle.md) |
 | **More guides** &mdash; coming soon | &mdash; |
