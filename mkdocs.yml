@@ -37,6 +37,9 @@ nav:
   - Home: index.md
   - "Guide 1: Data Management Basics": data-management.md
   - "Guide 2: Getting Started on Hydra": hydra.md
+  - "Guide 3: Computing Standards": computing-standards.md
+  - "Guide 4: Using Globus": globus-file-transfer.md
+  - "Guide 5: Understanding the Data Lifecycle": data-lifecycle.md
 
 markdown_extensions:
   - toc:
