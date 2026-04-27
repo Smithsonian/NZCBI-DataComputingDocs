@@ -56,10 +56,10 @@ jobs:
           files=(
             "data-management.md"
             "hydra.md"
-	    "computing-standards.md"
-	    "globus-file-transfer.md"		
-	    "data-lifecycle.md"
-        )
+            "computing-standards.md"
+            "globus-file-transfer.md"
+            "data-lifecycle.md"
+            )
 
           first=true
           for file in "${files[@]}"; do
