@@ -1,3 +1,3 @@
-# Guide 4: Transferring Files to External Collaborators (Using Globus)
+# Guide 2: Introduction to R
 
 Information being developed.  Check back soon.
