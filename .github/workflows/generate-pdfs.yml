@@ -55,12 +55,12 @@ jobs:
           cd docs
           files=(
             "data-management.md"
-	    "R-Intro.md"
+            "R-Intro.md"
             "hydra.md"
-	    "RStudio-Hydra.md"
-	    "github.md"
-	    "computing-standards.md"
-	    "data-lifecycle.md"
+            "RStudio-Hydra.md"
+            "github.md"
+            "computing-standards.md"
+            "data-lifecycle.md"
         )
 
           first=true
