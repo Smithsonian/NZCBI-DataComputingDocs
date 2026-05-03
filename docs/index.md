@@ -10,7 +10,7 @@ hide:
 Practical guides for managing research data and using computing resources at the Smithsonian's National Zoo and Conservation Biology Institute.
 {: .subtitle }
 
-Whether you're working with camera trap imagery, acoustic recordings, genomic sequences, GIS layers, or video from animal behavior studies, these guides cover how to organize, store, share, and compute on your data using NZCBI and Smithsonian-supported systems.
+Whether you're working with camera trap imagery, acoustic recordings, genomic sequences, GIS layers, high resolution satellite imagery, or video from animal behavior studies, these guides cover how to organize, store, share, and compute on your data using NZCBI and Smithsonian-supported systems.
 
 [Get started with data management :material-arrow-right:](data-management.md){ .md-button .md-button--primary }
 
@@ -21,14 +21,16 @@ Whether you're working with camera trap imagery, acoustic recordings, genomic se
 | I want to&hellip; | Start here |
 |---|---|
 | **Organize my project data** &mdash; naming conventions, folder structure, metadata, backup strategy | [Guide 1: Data Management Basics](data-management.md) |
-| **Run computational analyses on Hydra** &mdash; log in, submit jobs, monitor progress, manage data | [Guide 2: Getting Started on Hydra](hydra.md) |
-| **Develop data computing standards** &mdash; enable interoperatiliby, improve efficiency, and foster collaboration | [Guide 3: Data Computing Standards](computing-standards.md) |
-| **Transfer files to external collaborators** &mdash; secure, high-performance data transfers and automation | [Guide 4: Using Globus](globus-file-transfer.md) |
-| **Learn about the data lifecycle** &mdash; plan, create/collect, store, use, share, archive/destroy | [Guide 5: Understanding the Data Lifecycle](data-lifecycle.md) |
+| **Learn the basics of R** &mdash; install, basic concepts, data manipulation, analysis, summary | [Guide 2: Introduction to R](R-Intro.md) |
+| **Run computational analyses on Hydra** &mdash; log in, submit jobs, monitor progress, manage data | [Guide 3: Getting Started on Hydra](hydra.md) |
+| **Use Hydra for R-Studio analyses** &mdash; connect, access, supercharge data analysis | [Guide 4: Running R-Studio from Hydra](RStudio-Hydra.md) |
+| **Share and archive code using github** &mdash; fork, push, pull, commit | [Guide 5: Initiate a Repo with GitHub](github.md) |
+| **Develop data computing standards** &mdash; enable interoperatiliby, improve efficiency, and foster collaboration | [Guide 6: Data Computing Standards](computing-standards.md) |
+| **Learn about the data lifecycle** &mdash; plan, create/collect, store, use, share, archive/destroy | [Guide 7: Understanding the Data Lifecycle](data-lifecycle.md) |
 | **More guides** &mdash; coming soon | &mdash; |
 
-!!! note "This site is actively being built out"
-    We're rolling out documentation for NZCBI research computing topics one guide at a time. If there's something specific you'd like covered, [open an issue](https://github.com/Smithsonian/NZCBI-DataComputingDocs/issues) or email the contact below.
+!!! note "This site is actively being developed"
+    We're rolling out documentation for NZCBI research computing topics one guide at a time. If there's something specific you'd like covered, [open an issue](https://github.com/Smithsonian/NZCBI-DataComputingDocs/issues) or email the relevant contact below.
 
 ## Who This Documentation Is For
 
@@ -58,11 +60,9 @@ Whether you're working with camera trap imagery, acoustic recordings, genomic se
 
 ### Getting Help
 
-<!-- TODO: replace the placeholder contact below with a real NZCBI address before publishing -->
-
 | Topic | Contact |
 |---|---|
-| General data management questions | <!-- TODO: e.g. NZCBI-Data@si.edu --> |
+| General data management questions | [fergusc@si.edu](mailto:fergusc@si.edu) |
 | Smithsonian HPC (Hydra) accounts and support | [SI-HPC@si.edu](mailto:SI-HPC@si.edu) |
 | Globus file transfers | [SI-Globus@si.edu](mailto:SI-Globus@si.edu) |
 | This documentation &mdash; corrections or suggestions | [Open an issue](https://github.com/Smithsonian/NZCBI-DataComputingDocs/issues) |

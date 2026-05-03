@@ -28,7 +28,7 @@ jobs:
       - name: Generate individual PDFs
         run: |
           cd docs
-          for file in data-management.md hydra.md computing-standards.md globus-file-transfer.md data-lifecycle.md; do
+          for file in data-management.md R-Intro.md hydra.md RStudio-Hyrda.md github.md computing-standards.md data-lifecycle.md; do
             if [ -f "$file" ]; then
               output_name=$(basename "$file" .md).pdf
 
@@ -55,9 +55,11 @@ jobs:
           cd docs
           files=(
             "data-management.md"
+	    "R-Intro.md"
             "hydra.md"
+	    "RStudio-Hydra.md"
+	    "github.md"
 	    "computing-standards.md"
-	    "globus-file-transfer.md"		
 	    "data-lifecycle.md"
         )
 
