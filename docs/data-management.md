@@ -1,32 +1,15 @@
-\# Data Management for Ecology \& Environmental Science
+# Guide 1: Data Management Basics
+
+Information being developed.  Check back soon.
 
 
+## Overview
 
-\## Overview
+Ecological research produces heterogeneous data including field observations, sensor outputs, genomics, imagery, and spatial data. Effective data management ensures integrity, accessibility, and reusability across the project lifecycle.
 
-Ecological research produces heterogeneous data including field observations,
+## Primary infrastructure:
 
-sensor outputs, genomics, imagery, and spatial data. Effective data management
+## Data Organization 
 
-ensures integrity, accessibility, and reusability across the project lifecycle.
-
-
-
-Primary infrastructure:
-
-\- \*\*Hydra\*\* – institutional storage and computing
-
-\- \*\*Globus\*\* – data transfer and sharing
-
-
-
-\---
-
-
-
-\## Data Organization \& Naming
-
-
-
-\### Recommended Directory Structure
+## Recommended Directory Structure
 
