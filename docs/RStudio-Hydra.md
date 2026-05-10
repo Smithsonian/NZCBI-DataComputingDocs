@@ -16,7 +16,7 @@ Just like the other components of Hydra, this server is only accessible from com
 Open https://galaxy.si.edu/R4 in a browser on a computer that has access to Hydra.
 Log in with your Hydra username (all lowercase) and password.
 
-![](/images/image-2025-5-22_16-24-4.png)
+![loginImage](/images/image-2025-5-22_16-24-4.png)
 
 ## Software specifications
 
