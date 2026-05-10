@@ -65,11 +65,13 @@ Your data must be transferred to/from Hydra to work on it - directories in `/hom
 
 In addition to the existing file transfer tools for Hydra (see the [file transfer guide](https://confluence.si.edu/spaces/HPC/pages/163152227/Transferring+Files+to+from+Hydra), [quick start guide](https://confluence.si.edu/spaces/HPC/pages/163152218/Quick+Start+Guide), and [Globus](https://smithsonian.github.io/globus-docs/)), [R-Studio](https://posit.co/download/rstudio-desktop) Server has built-in tools for file transfers. These built-in tools are best for small files or quick edits. For large files or large file sets consider other file transfer tools.
 
-**Using [R-Studio](https://posit.co/download/rstudio-desktop) Server's built-in tools**
 
-**Upload** from your computer to Hydra: use the “Upload” button in the Files tag
+# Using [R-Studio](https://posit.co/download/rstudio-desktop) Server's built-in tools
+
+**Upload** from your computer to Hydra - use the “Upload” button in the Files tag
 
 ![Upload](assets/Upload.png)
+
 - Only one file can be uploaded at a time. Create a zip archive on your computer to upload several files at once. [R-Studio](https://posit.co/download/rstudio-desktop) Server will unzip them automatically when they’re received.
 
 **Download** from Hydra to your computer
