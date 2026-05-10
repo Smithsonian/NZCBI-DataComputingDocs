@@ -68,20 +68,20 @@ In addition to the existing file transfer tools for Hydra (see the [file transfe
 
 **Using [R-Studio](https://posit.co/download/rstudio-desktop) Server's built-in tools**
 
-* **Upload** from your computer to Hydra - use the “Upload” button in the Files tag
+* 	**Upload** from your computer to Hydra - use the “Upload” button in the Files tag
 
 ![Upload](assets/Upload.png)
 
-* Only one file can be uploaded at a time. Create a zip archive on your computer to upload several files at once. [R-Studio](https://posit.co/download/rstudio-desktop) Server will unzip them automatically when they’re received.
+- 	Only one file can be uploaded at a time. Create a zip archive on your computer to upload several files at once. [R-Studio](https://posit.co/download/rstudio-desktop) Server will unzip them automatically when they’re received.
 
 **Download** from Hydra to your computer
 
-- Select the checkboxes for files and folders you want to download.
-- Click the “More” button.
-- Choose “Export…”
+*	Select the checkboxes for files and folders you want to download.
+- 	Click the “More” button.
+- 	Choose “Export…”
 ![Download](assets/Download.png)
-- In the pop-up window click the Download button to save to your computer. If multiple files or a folder was selected, it will be zipped automatically prior to download.
-- ![PopUp](assets/Popup.png)
+- 	In the pop-up window click the Download button to save to your computer. If multiple files or a folder was selected, it will be zipped automatically prior to download.
+![PopUp](assets/Popup.png)
 
 2. [R](https://cran.r-project.org/) Session
 
