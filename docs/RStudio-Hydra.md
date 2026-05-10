@@ -49,13 +49,13 @@ Be mindful that the [R Studio](https://posit.co/download/rstudio-desktop) Server
 
 The [R Studio](https://posit.co/download/rstudio-desktop) Server can be accessed directly from your browser if your computer has a VPN enabled to provide access to Hydra.
 
-The Smithsonian Telework website, https://telework.si.edu, can be used to access Hydra without a VPN.
+The Smithsonian Telework website, [https//telework.si.edu](https://telework.si.edu), can be used to access Hydra without a VPN.
 
-1. Log into
-https://telework.si.edu
+1. Log into:
+[https//telework.si.edu](https://telework.si.edu)
 
 2. In the text box in the top left of the window, under the Smithsonian logo, labeled "Enter an internal resource" enter:
-https://galaxy.si.edu/R4
+[https://galaxy.si.edu/R4](https://galaxy.si.edu/R4)
 and then press the enter/return key.
 
 ![Remote](/docs/images/Galaxy.png)
