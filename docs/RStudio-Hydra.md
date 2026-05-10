@@ -68,10 +68,12 @@ In addition to the existing file transfer tools for Hydra (see the [file transfe
 **Using [R-Studio](https://posit.co/download/rstudio-desktop) Server's built-in tools**
 
 **Upload** from your computer to Hydra: use the “Upload” button in the Files tag
+
 ![Upload](assets/Upload.png)
 - Only one file can be uploaded at a time. Create a zip archive on your computer to upload several files at once. [R-Studio](https://posit.co/download/rstudio-desktop) Server will unzip them automatically when they’re received.
 
 **Download** from Hydra to your computer
+
 - Select the checkboxes for files and folders you want to download.
 - Click the “More” button.
 - Choose “Export…”
@@ -91,6 +93,7 @@ Use “Quit Session...” from the Session or File menu.
 ![Session](assets/Session.png)
 
 **One [R](https://cran.r-project.org/) Session limit**
+
 [R-Studio](https://posit.co/download/rstudio-desktop) Server only allows one [R](https://cran.r-project.org/) session per user. This means that if you have an existing session and log in to the server via a browser, control of that session will switch to the current browser. There is not a way to have more than one browser window open with different [R-Studio](https://posit.co/download/rstudio-desktop)  and [R](https://cran.r-project.org/) sessions.
 
 ## Additional Information
