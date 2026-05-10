@@ -9,7 +9,7 @@ Users can leverage this server to test, debug, and develop [R](https://cran.r-pr
 
 ## Getting Started
 
-The [R-Studio](https://posit.co/download/rstudio-desktop) environment is accessible directly via a browser, at [https://galaxy.si.edu/R4](https://galaxy.si.edu/R4).
+The [R-Studio](https://posit.co/download/rstudio-desktop) environment is accessible directly via a browser at [https://galaxy.si.edu/R4](https://galaxy.si.edu/R4).
 
 Just like the other components of Hydra, this server is only accessible from computers connected to Smithsonian networks (i.e., VPN, [telework.si.edu](https://telework.si.edu), or on-site networks), not on the public internet. Instructions for remote access are provided below in [Remote Access](#remote-access).
 
