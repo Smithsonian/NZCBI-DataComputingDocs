@@ -43,15 +43,31 @@ Note that it’s important to read the error messages that [R](https://cran.r-pr
 
 ## Basic R Concepts
 
+There are a few concepts that are important to keep in mind before you start coding. The fact that [R](https://cran.r-project.org/) is a programming language may deter some users who think “I can’t program”. This should not be the case for two reasons. First, [R](https://cran.r-project.org/) is an interpreted language, not a compiled one, meaning that all commands typed on the keyboard are directly executed without requiring you to build a complete program like many other computer languages (e.g., C, Pascal). Second, [R](https://cran.r-project.org/)’s syntax is very simple and intuitive. For instance, a linear regression can be done with the command `lm(y ~ x)` which means fitting a linear model with `y` as the response and `x` as a predictor. 
+
+In [R](https://cran.r-project.org/), we need to send a command to the “prompt” for the command to be executed. A greater than sign (>) in the console indicates that [R](https://cran.r-project.org/) is ready to accept commands. Functions always need to be written with parentheses, even if there is nothing within the parentheses (e.g., `ls()` instead of `ls`). If you type the name of a function without parentheses, [R](https://cran.r-project.org/) will display the content of the function. See what happens when typing `ls` instead of `ls()` in the Console.
+
+Variables, data, functions, results, are stored in active memory in the form of objects that you assign with a name (`x = c(1,2,3)`). The user can then execute actions on these objects with operators (arithmetic, logical, comparison) and functions (e.g., `x + 3`). We can send and work directly in the console, or much better, we can **create a script** so that we can edit the code and re-run the analysis in the future. 
+
 ### Naming Conventions
+
+The name of an object must start with a letter (A-Z or a-z) and can be followed by letters, digits (0-9), dots (.), and underscores (_). Do not include spaces. It is also important to note that [R](https://cran.r-project.org/) discriminates between uppercase and lowercase letters in the names of objects, so that `x` and `X` can name two distinct objects.
+
+In addition to commenting your code, there are best practices to help make your code more readable. This includes using appropriate naming conventions, such as **snake case** or **Camel Case**:
+
+- some_use_snake_case
+- SomePreferCamelCase
+
+Choosing a naming convention is a personal preference. Most important is to choose a format and be consistent! You (and your collaborators) will thank you for it.
+
+!!! note "Be careful with forward and back slashes"
+    When referring to the directory of a folder or a data file, [R](https://cran.r-project.org/) uses forward slash “/”. You need to pay close attention to the direction of the slash if you copy a file path or directory from a Windows machine.
 
 ## Starting R - Setting your working directory
 
 ## R Fundamentals
 
 ## Data Structures in R
-
-
 
 ## Other Resources: SWIRL
 
