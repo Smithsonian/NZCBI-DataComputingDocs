@@ -133,6 +133,98 @@ numbers * 3
 
 ## Data Structures in R
 
+### Vectors
+
+Vectors are a basic data structure in R. They contain a sequence of data and can contain characters, numbers, or be TRUE/FALSE values. Below are several examples of simple vectors.
+
+!!! note "Getting help"
+    If you are unsure or need help, use the help function (e.g., `help(seq)` or `?seq`).
+
+```
+1:20
+c(1,2,3,4,5)
+seq(0,100,by=10)
+rep(1:5,5)
+rep("A rolling stone gathers no moss",4)
+```
+
+### Vector Notation
+To see only part (i.e., a subset) of the data stored in a vector, you need to “ask” R to extract the information you want using square brackets (e.g., []). Most commonly, you will indicate in square brackets the position of the data you want to extract (from beginning of the vector [1] to the Nth slot in the vector [n]).
+
+```
+# Create vectcor
+x <- c(1,3,8,21,48,56,4,29,182,5)
+x
+# Using vector notation, we can extract any number in the sequence.  For instance, x[4] will return the 4th number in the sequence
+x[4]
+```
+
+### Matrices and Dataframes
+
+Matrices and dataframes are common ways to store tabular data. Understanding how to manipulate them is important to be able to conduct more complex analyses. Both matrices and dataframes are composed of rows and columns. The main difference between matrices and dataframes is that dataframes can contain many different classes of data (numeric, character, etc.), while matrices can only contain a single class.
+
+Here we’ll create a matrix with 4 rows and 5 columns using the data from x above. Consult the help (e.g., `help(matrix)` or `?matrix`) to determine the syntax required.
+
+```
+# Create matrix
+test_matrix <- matrix(data = x, nrow = 4, ncol = 5)
+test_matrix
+```
+
+```
+# Note, you can assign any name to an object (as below), but it is best practice to choose meaningful names. 
+superman <- matrix(data = x, nrow = 4, ncol = 5)
+```
+
+### Functions
+
+[R](https://cran.r-project.org/) functions can be defined as a collection of arguments structured together for carrying out a definite task. Most functions have optional arguments or are given default values (in the function’s help document, the optional arguments are given a default value following the “=” symbol).
+
+Functions normally can be called using the following syntax: `result_value <- function_name(argument1 = value1, argument2 = value2, ...)`.
+
+When you don’t specify the optional arguments, they will take the default values. R contains many pre-existing functions. Simple numeric functions include `sum()`, `mean()`, `sd()`, `min()`, `max()`, `median()`, `range()`, `quantile()`, or `summary()`. Try a few of these on the numeric vectors you have created.
+
+```
+sum(x)
+summary(x)
+range(x)
+```
+
+### Calculations & Arithmetic Operators
+
+As you’d expect, [R](https://cran.r-project.org/) can be used to perform calculations and report the results back to the user. This includes simple or complex mathematical calculations (e.g., min, max, exponentiate)
+
+```
+# Additional, subtraction, multiplication, and division
+4+2
+6*8
+(842-62)/3
+
+# Exponentiate
+2^3
+
+# Min and Max
+vector_numbers <- c(2, 3, 4, 10)
+max(vector_numbers) 
+min(vector_numbers)
+```
+
+### Logical operations and Expressions
+
+Relational operators (`<`, `>`, `=`, `!=`, `>=`, `<=`) evaluate a conditional expression and return `TRUE` or `FALSE`. Commonly used relational operators include:
+
+- `==` means ‘is equal to’
+- `!=` means ‘is not equal to’
+- `<` means ‘is less than’
+- `>` means ‘is greater than’
+- `<=` means ‘is less than or equal to’
+- `>=` means ‘is greater than or equal to’
+
+```
+# What is the maximum value of a vector of values?
+3 > max(c(2,3,4,5))
+```
+
 ## Other Resources: SWIRL
 
 [R](https://cran.r-project.org/) packages are the building blocks of computational reproducibility in [R](https://cran.r-project.org/). Each package contains a set of related functions that enable you to more easily do a task or set of tasks in [R](https://cran.r-project.org/). There are thousands of community-maintained packages out there for just about every imaginable use of [R](https://cran.r-project.org/).
