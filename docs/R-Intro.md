@@ -70,6 +70,7 @@ Choosing a naming convention is a personal preference. Most important is to choo
 ### Data Types
 
 There are four fundamental data types in R that you will work with:
+
 1. Character: Data are string values (a word or sequence of words)
 2. Numeric (also called double): Data are numbers that contain a decimal
 3. Integer: Data are whole numbers (no decimal point)
@@ -135,7 +136,7 @@ numbers * 3
 
 ### Vectors
 
-Vectors are a basic data structure in R. They contain a sequence of data and can contain characters, numbers, or be `TRUE/FALSE` values. Below are several examples of simple vectors.
+Vectors are a basic data structure in R. They contain a sequence of data and can contain characters, numbers, or `TRUE/FALSE` values. Below are several examples of simple vectors.
 
 !!! note "Getting help"
     If you are unsure or need help, use the help function (e.g., `help(seq)` or `?seq`).
@@ -149,7 +150,7 @@ rep("A rolling stone gathers no moss",4)
 ```
 
 #### Vector Notation
-To see only part (i.e., a subset) of the data stored in a vector, you need to “ask” R to extract the information you want using square brackets (e.g., []). Most commonly, you will indicate in square brackets the position of the data you want to extract (from beginning of the vector [1] to the Nth slot in the vector [n]).
+To see only part (i.e., a subset) of the data stored in a vector, you need to “ask” [R](https://cran.r-project.org/) to extract the information you want using square brackets (e.g., []). Most commonly, you will indicate in square brackets the position of the data you want to extract (from beginning of the vector [1] to the Nth slot in the vector [n]).
 
 ```
 # Create vector
@@ -173,21 +174,20 @@ test_matrix
 
 #### Subsetting Matrics and Dataframes
 
-Now, if we wanted to reference any value in the matrix, we could do so with matrix notation. The first value in matrix notation references the row and the second value references the column. 
+You can reference any value in the matrix using matrix notation. The first value in matrix notation references the row and the second value references the column. 
 
 ```
-# test_matrix(row,column)
+# Row 1; Column 5 of test_matrix
 test_matrix[1,5]
 ```
 
-
 ### Functions
 
-[R](https://cran.r-project.org/) functions can be defined as a collection of arguments structured together for carrying out a definite task. Most functions have optional arguments or are given default values (in the function’s help document, the optional arguments are given a default value following the “=” symbol).
+[R](https://cran.r-project.org/) functions can be defined as a collection of arguments structured together for carrying out a task. Most functions have optional arguments or are given default values.
 
 Functions normally can be called using the following syntax: `result_value <- function_name(argument1 = value1, argument2 = value2, ...)`.
 
-When you don’t specify the optional arguments, they will take the default values. R contains many pre-existing functions. Simple numeric functions include `sum()`, `mean()`, `sd()`, `min()`, `max()`, `median()`, `range()`, `quantile()`, or `summary()`. Try a few of these on the numeric vectors you have created.
+When you don’t specify the optional arguments, they will take the default values. [R](https://cran.r-project.org/) contains many pre-existing functions. Simple numeric functions include `sum()`, `mean()`, `sd()`, `min()`, `max()`, `median()`, `range()`, `quantile()`, or `summary()`. Try a few of these on the numeric vectors you have created.
 
 ```
 sum(x)
