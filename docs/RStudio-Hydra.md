@@ -52,7 +52,6 @@ The Smithsonian Telework website - [https//telework.si.edu](https://telework.si.
 2. In the text box in the top left of the window, under the Smithsonian logo, labeled "Enter an internal resource" enter: <br>
 [https://galaxy.si.edu/R4](https://galaxy.si.edu/R4) <br>
 and then press the enter/return key.
-
 ![Remote](NZCBI-DataComputingDocs/docs/images/Galaxy.png)
 
 3. The [R Studio](https://posit.co/download/rstudio-desktop) Server login page will open in the same way as if you were onsite.
@@ -63,6 +62,6 @@ Using [R Studio](https://posit.co/download/rstudio-desktop) Server is nearly ide
 
 a. File transfer
 
-Your data must be transferred to/from Hydra to work on it - directories in `/homes`, `/data`, and `/scratch` are all available on this server. Note: `/store` is not available at this time. The Hydra storage guidance, quotas, and scrubber policies apply to data used through the dedicated [R Studio](https://posit.co/download/rstudio-desktop) Server. 
+Your data must be transferred to/from Hydra to work on it - directories in `/home`, `/data`, and `/scratch` are all available on this server. Note: `/store` is not available at this time. The Hydra storage guidance, quotas, and scrubber policies apply to data used through the dedicated [R Studio](https://posit.co/download/rstudio-desktop) Server. 
 
 In addition to the existing file transfer tools for Hydra (see the [file transfer guide](https://confluence.si.edu/spaces/HPC/pages/163152227/Transferring+Files+to+from+Hydra), [quick start guide](https://confluence.si.edu/spaces/HPC/pages/163152218/Quick+Start+Guide), and [Globus](https://smithsonian.github.io/globus-docs/)), [R Studio](https://posit.co/download/rstudio-desktop) Server has built-in tools for file transfers. These built-in tools are best for small files or quick edits. For large files or large file sets consider other file transfer tools.
