@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      - 'assets/**'
       - 'docs/**'
       - 'mkdocs.yml'
   workflow_dispatch:
