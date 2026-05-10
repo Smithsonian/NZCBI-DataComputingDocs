@@ -74,9 +74,8 @@ In addition to the existing file transfer tools for Hydra (see the [file transfe
 
 - 	Only one file can be uploaded at a time. Create a zip archive on your computer to upload several files at once. [R-Studio](https://posit.co/download/rstudio-desktop) Server will unzip them automatically when they’re received.
 
-**Download** from Hydra to your computer
-
-*	Select the checkboxes for files and folders you want to download.
+*	**Download** from Hydra to your computer
+-	Select the checkboxes for files and folders you want to download.
 - 	Click the “More” button.
 - 	Choose “Export…”
 ![Download](assets/Download.png)
