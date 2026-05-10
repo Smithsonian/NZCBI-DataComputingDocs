@@ -57,6 +57,12 @@ and then press the enter/return key.
 
 3. The [R Studio](https://posit.co/download/rstudio-desktop) Server login page will open in the same way as if you were onsite.
 
+## R Studio Server vs R Workstation
+	
+Using [R Studio](https://posit.co/download/rstudio-desktop) Server is nearly identical to running the standard workstation version of [R Studio](https://posit.co/download/rstudio-desktop). Below are some instances where they differ:
 
-	
-	
+a. File transfer
+
+Your data must be transferred to/from Hydra to work on it - directories in `/homes`, `/data`, and `/scratch` are all available on this server. Note: `/store` is not available at this time. The Hydra storage guidance, quotas, and scrubber policies apply to data used through the dedicated [R Studio](https://posit.co/download/rstudio-desktop) Server. 
+
+In addition to the existing file transfer tools for Hydra (see the [file transfer guide](https://confluence.si.edu/spaces/HPC/pages/163152227/Transferring+Files+to+from+Hydra), [quick start guide](https://confluence.si.edu/spaces/HPC/pages/163152218/Quick+Start+Guide), and [Globus](https://smithsonian.github.io/globus-docs/)), [R Studio](https://posit.co/download/rstudio-desktop) Server has built-in tools for file transfers. These built-in tools are best for small files or quick edits. For large files or large file sets consider other file transfer tools.
