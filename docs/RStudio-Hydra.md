@@ -82,6 +82,7 @@ In addition to the existing file transfer tools for Hydra (see the [file transfe
 	- In the pop-up window click the Download button to save to your computer. If multiple files or a folder was selected, it will be zipped automatically prior to download.
 ![PopUp](assets/Popup.png)
 
+
 2. [R](https://cran.r-project.org/) Session
 
 Your [R](https://cran.r-project.org/) session will continue to run on the server when you close your browser window or log off your computer. Any analyses underway will continue and your memory will be preserved. To re-connect to your [R](https://cran.r-project.org/) session, log back in to the [R-Studio](https://posit.co/download/rstudio-desktop) Server. This will work even if you log back on from a different computer. This allows you to start a long analysis on the server and then disconnect.
@@ -95,8 +96,7 @@ Use “Quit Session...” from the Session or File menu.
 ![Session](assets/Session.png)
 
 
-
-**One [R](https://cran.r-project.org/) Session limit**
+**One Session limit**
 
 [R-Studio](https://posit.co/download/rstudio-desktop) Server only allows one [R](https://cran.r-project.org/) session per user. This means that if you have an existing session and log in to the server via a browser, control of that session will switch to the current browser. There is not a way to have more than one browser window open with different [R-Studio](https://posit.co/download/rstudio-desktop)  and [R](https://cran.r-project.org/) sessions.
 
