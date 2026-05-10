@@ -18,6 +18,7 @@ Just like the other components of Hydra, this server is only accessible from com
 
 1. Open https://galaxy.si.edu/R4 in a browser on a computer that has access to Hydra.
 2. Log in with your Hydra username (all lowercase) and password.
+![login Image](/assets/images/Login.png)
 3. A web-based interface to a [R Studio](https://posit.co/download/rstudio-desktop) session running on the server opens. The interface is nearly identical to what you would use on your workstation.
 You can install packages, runs scripts, create [R](https://cran.r-project.org/) projectsin the same way as you would on your workstation. 
 4. The "Files" tab shows Hydra's storage systems. You have access to Hydra's `/home`, `/scratch`, `/data`, and `/store` directories. You can use the [R Studio](https://posit.co/download/rstudio-desktop) Server interface to transfer files or use other file transfer tools. 
