@@ -68,11 +68,11 @@ In addition to the existing file transfer tools for Hydra (see the [file transfe
 
 **Using [R-Studio](https://posit.co/download/rstudio-desktop) Server's built-in tools**
 
-**Upload** from your computer to Hydra - use the “Upload” button in the Files tag
+* **Upload** from your computer to Hydra - use the “Upload” button in the Files tag
 
 ![Upload](assets/Upload.png)
 
-- Only one file can be uploaded at a time. Create a zip archive on your computer to upload several files at once. [R-Studio](https://posit.co/download/rstudio-desktop) Server will unzip them automatically when they’re received.
+* Only one file can be uploaded at a time. Create a zip archive on your computer to upload several files at once. [R-Studio](https://posit.co/download/rstudio-desktop) Server will unzip them automatically when they’re received.
 
 **Download** from Hydra to your computer
 
