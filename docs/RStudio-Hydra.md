@@ -55,7 +55,7 @@ The Smithsonian Telework website - [https//telework.si.edu](https://telework.si.
 [https://telework.si.edu](https://telework.si.edu)
 
 2. In the text box in the top left of the window, under the Smithsonian logo, labeled "Enter an internal resource" enter: <br>
-[https://galaxy.si.edu/R4](https://galaxy.si.edu/R4)
+[https://galaxy.si.edu/R4](https://galaxy.si.edu/R4) <br>
 and then press the enter/return key.
 
 ![Remote](NZCBI-DataComputingDocs/docs/images/Galaxy.png)
