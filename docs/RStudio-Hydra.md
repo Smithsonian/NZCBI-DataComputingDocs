@@ -60,6 +60,9 @@ and then press the enter/return key.
 Using [R-Studio](https://posit.co/download/rstudio-desktop) Server is nearly identical to running the standard workstation version of [R-Studio](https://posit.co/download/rstudio-desktop). However, some key differences exist:
 
 1. File transfer
+Your data must be transferred to/from Hydra to work on it - directories in `/home`, `/data`, and `/scratch` are all available on this server. Note: `/store` is not available at this time. The Hydra storage guidance, quotas, and scrubber policies apply to data used through the dedicated [R-Studio](https://posit.co/download/rstudio-desktop) Server. 
+
+2. [R](https://cran.r-project.org/) Session (HELP2)
 
 Your data must be transferred to/from Hydra to work on it - directories in `/home`, `/data`, and `/scratch` are all available on this server. Note: `/store` is not available at this time. The Hydra storage guidance, quotas, and scrubber policies apply to data used through the dedicated [R-Studio](https://posit.co/download/rstudio-desktop) Server. 
 
@@ -82,7 +85,7 @@ In addition to the existing file transfer tools for Hydra (see the [file transfe
 	- In the pop-up window click the Download button to save to your computer. If multiple files or a folder was selected, it will be zipped automatically prior to download.
 ![PopUp](assets/Popup.png)
 
-2. [R](https://cran.r-project.org/) Session (HELP)
+2. [R](https://cran.r-project.org/) Session (HELP2)
 
 Your [R](https://cran.r-project.org/) session will continue to run on the server when you close your browser window or log off your computer. Any analyses underway will continue and your memory will be preserved. To re-connect to your [R](https://cran.r-project.org/) session, log back in to the [R-Studio](https://posit.co/download/rstudio-desktop) Server. This will work even if you log back on from a different computer. This allows you to start a long analysis on the server and then disconnect.
 
