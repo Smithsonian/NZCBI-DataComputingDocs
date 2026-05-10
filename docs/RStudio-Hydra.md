@@ -56,9 +56,11 @@ The Smithsonian Telework website, [https//telework.si.edu](https://telework.si.e
 
 2. In the text box in the top left of the window, under the Smithsonian logo, labeled "Enter an internal resource" enter:
 [https://galaxy.si.edu/R4](https://galaxy.si.edu/R4)
+
 and then press the enter/return key.
 
-![Remote](/docs/images/Galaxy.png)
+![Remote](NZCBI-DataComputingDocs/docs/images/Galaxy.png)
+![Remote2](/NZCBI-DataComputingDocs/docs/images/Galaxy.png)
 
 3. The [R Studio](https://posit.co/download/rstudio-desktop) Server login page will open in the same way as if you were onsite.
 
