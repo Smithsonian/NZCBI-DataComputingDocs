@@ -65,6 +65,27 @@ Choosing a naming convention is a personal preference. Most important is to choo
 
 ## Starting R - Setting your working directory
 
+Like many other programs, you should start your session by defining your working directory - the folder where you will work. This will be the location on your computer where any files you save will be located. To determine your current working directory, type `getwd()` in the Console:
+
+```
+getwd()
+```
+
+Use `setwd()` to change or set a new working directory. For instance, you can set your working directory to be in your Documents folder on the C:/ drive, or in any folder you prefer.
+!!! note "Avoid using the `setwd()` command"
+    If you are using [R-Studio](https://posit.co/download/rstudio-desktop), there is no need to set your working directory ([R-Studio](https://posit.co/download/rstudio-desktop) will do this for you automatically). This is very convenient, as relative paths are maintained, allowing you to share your project with collaborators without a need to set the absolute path. Once you start working in projects, you should never need to run the `setwd()` command again.
+	
+The goal is to organize your project so that all of the files needed to complete your analyses are contained within the main folder (i.e., the folder contents are a compendium of your research). This also means that you do not need to provide the full path to any of the files located in subfolders. Working with relative paths makes your code much more portable.
+
+Some common directories and best practicies for organizing your project include:
+
+- Data: Where to store your data files (often with subdirectories for raw and processed data)
+- Scripts: Where to store your scripts for data cleaning and analysis
+- Output: Where to store or write plots, graphs, or figures generated in your analysis
+- Documents: Summaries or reports of analysis or other relevant project information
+
+The directories you use will vary from project to project. The key point is to keep all the resources you need to complete your analyses in a well organized project. This will help in the future when you need to share files with collaborators or reproduce results.
+
 ## R Fundamentals
 
 ### Data Types
