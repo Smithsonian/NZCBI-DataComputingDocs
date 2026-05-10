@@ -16,7 +16,7 @@ Just like the other components of Hydra, this server is only accessible from com
 1. Open https://galaxy.si.edu/R4 in a browser on a computer that has access to Hydra.
 2. Log in with your Hydra username (all lowercase) and password.
 
-![login Image](/docs/images/Login.png)
+![login Image](/assets/images/Login.png)
 
 3. A web-based interface to a [R Studio](https://posit.co/download/rstudio-desktop) session running on the server opens. The interface is nearly identical to what you would use on your workstation.
 You can install packages, runs scripts, create [R](https://cran.r-project.org/) projectsin the same way as you would on your workstation. 
@@ -52,15 +52,13 @@ The [R Studio](https://posit.co/download/rstudio-desktop) Server can be accessed
 The Smithsonian Telework website - [https//telework.si.edu](https://telework.si.edu) - can also be used to access Hydra without a VPN. To do so:
 
 1. Log into: <br>
-[https//telework.si.edu](https://telework.si.edu)
+[https://telework.si.edu](https://telework.si.edu)
 
 2. In the text box in the top left of the window, under the Smithsonian logo, labeled "Enter an internal resource" enter: <br>
-[https://galaxy.si.edu/R4](https://galaxy.si.edu/R4) <br>
-
+[https://galaxy.si.edu/R4](https://galaxy.si.edu/R4)
 and then press the enter/return key.
 
 ![Remote](NZCBI-DataComputingDocs/docs/images/Galaxy.png)
-![Remote2](/NZCBI-DataComputingDocs/docs/images/Galaxy.png)
 
 3. The [R Studio](https://posit.co/download/rstudio-desktop) Server login page will open in the same way as if you were onsite.
 
