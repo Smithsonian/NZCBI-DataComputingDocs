@@ -14,12 +14,16 @@ The [R Studio](https://posit.co/download/rstudio-desktop) environment is accessi
 Just like the other components of Hydra, this server is only accessible from computers connected to Smithsonian networks (i.e., VPN, telework.si.edu, or on-site networks), not on the public internet. Instructions for remote access are provided below in [Remote Access](#remote-access).
 
 1. Open https://galaxy.si.edu/R4 in a browser on a computer that has access to Hydra.
-2. Log in with your Hydra username (all lowercase) and password. <br>
+2. Log in with your Hydra username (all lowercase) and password. 
+
 ![login Image](/assets/images/Login.png)
+
 3. A web-based interface to a [R Studio](https://posit.co/download/rstudio-desktop) session running on the server opens. The interface is nearly identical to what you would use on your workstation.
 You can install packages, runs scripts, create [R](https://cran.r-project.org/) projectsin the same way as you would on your workstation. 
-4. The "Files" tab shows Hydra's storage systems. You have access to Hydra's `/home`, `/scratch`, `/data`, and `/store` directories. You can use the [R Studio](https://posit.co/download/rstudio-desktop) Server interface to transfer files or use other file transfer tools.  <br>
+4. The "Files" tab shows Hydra's storage systems. You have access to Hydra's `/home`, `/scratch`, `/data`, and `/store` directories. You can use the [R Studio](https://posit.co/download/rstudio-desktop) Server interface to transfer files or use other file transfer tools.  
+
 ![Files](/docs/images/Files.png)
+
 5. All computations are performed on the dedicated server. If you close the browser window, your R session continues so objects in memory are preserved and computations will continue. 
 
 ## Software specifications
