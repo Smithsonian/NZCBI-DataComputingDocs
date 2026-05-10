@@ -45,7 +45,7 @@ Note that it’s important to read the error messages that [R](https://cran.r-pr
 
 There are a few concepts that are important to keep in mind before you start coding. The fact that [R](https://cran.r-project.org/) is a programming language may deter some users who think “I can’t program”. This should not be the case for two reasons. First, [R](https://cran.r-project.org/) is an interpreted language, not a compiled one, meaning that all commands typed on the keyboard are directly executed without requiring you to build a complete program like many other computer languages (e.g., C, Pascal). Second, [R](https://cran.r-project.org/)’s syntax is very simple and intuitive. For instance, a linear regression can be done with the command `lm(y ~ x)` which means fitting a linear model with `y` as the response and `x` as a predictor. 
 
-In [R](https://cran.r-project.org/), we need to send a command to the “prompt” for the command to be executed. A greater than sign (>) in the console indicates that [R](https://cran.r-project.org/) is ready to accept commands. Functions always need to be written with parentheses, even if there is nothing within the parentheses (e.g., `ls()` instead of `ls`). If you type the name of a function without parentheses, [R](https://cran.r-project.org/) will display the content of the function. See what happens when typing `ls` instead of `ls()` in the Console.
+In [R](https://cran.r-project.org/), we need to send a command to the “prompt” for the command to be executed. A greater than sign (`>`) in the console indicates that [R](https://cran.r-project.org/) is ready to accept commands. Functions always need to be written with parentheses, even if there is nothing within the parentheses (e.g., `ls()` instead of `ls`). If you type the name of a function without parentheses, [R](https://cran.r-project.org/) will display the content of the function. See what happens when typing `ls` instead of `ls()` in the Console.
 
 Variables, data, functions, results, are stored in active memory in the form of objects that you assign with a name (`x = c(1,2,3)`). The user can then execute actions on these objects with operators (arithmetic, logical, comparison) and functions (e.g., `x + 3`). We can send and work directly in the console, or much better, we can **create a script** so that we can edit the code and re-run the analysis in the future. 
 
@@ -66,6 +66,70 @@ Choosing a naming convention is a personal preference. Most important is to choo
 ## Starting R - Setting your working directory
 
 ## R Fundamentals
+
+### Data Types
+
+There are four fundamental data types in R that you will work with:
+1. Character: Data are string values (a word or sequence of words)
+2. Numeric (also called double): Data are numbers that contain a decimal
+3. Integer: Data are whole numbers (no decimal point)
+4. Logical (also called boolean): Data that are either `TRUE`, `FALSE`, or `NA`
+
+You can check the data type of an object using the function `class()` or using logical tests such as `is.numeric()`, `is.character()`, and `is.logical()`. To convert between data types you can use: `as.integer()`, `as.numeric()`, `as.logical()`, `as.character()`.
+
+For instance:
+
+```
+city <- 'Nairobi'
+class(city)
+
+number <- 3
+class(number)
+
+Integer <- as.integer(number)
+class(Integer)
+
+double <- 56.2
+class(double)
+is.numeric(double)
+
+logical <- 3 > 5
+logical
+```
+
+### Assigning Date to objects
+
+Since [R](https://cran.r-project.org/) is a programming language, we can store information as objects to avoid unnecessary repetition. To keep information in [R](https://cran.r-project.org/), we need to create an object. We can assign a value of a mathematical operation (and more) to an object in R using the assignment operator `<-` (greater than sign and minus sign). The general format for using the assignment operator in [R](https://cran.r-project.org/) is: `object_name <- value`. By doing so, we can re-use the object and use it in additional calculations.
+
+!!! note "Objects stored in memory"
+    After creating an object, [R](https://cran.r-project.org/) doesn’t print anything to the screen. We can force [R](https://cran.r-project.org/) to print the object by calling the object name (i.e., by typing it out) or by using parentheses. In addition, if we look at our Environment tab (upper right panel), we will see that the object has been stored in [R](https://cran.r-project.org/).
+
+```
+city <- "front royal"
+city
+
+(numbers <- c(1,3,5,12))
+summary(numbers)
+```
+
+### Special Characters
+
+The `#` character is used to add comments to your code. `#` indicates the beginning of a comment and everything after `#` on a line will be ignored and not run as code. Adding comments to your code is considered good practice because it allows you to describe in plain language (for yourself or others) what your code is doing.
+
+You can also use the semicolon (;) so that you can write different commands on the same line of code.
+
+```
+# This is a comment
+
+# Combining commands using ;
+a <- 3; b <- 6; c <- a+b
+a
+b
+c
+
+# Multiple our numbers object by 3
+numbers * 3
+```
 
 ## Data Structures in R
 
