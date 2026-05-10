@@ -15,14 +15,14 @@
 
 [R](https://cran.r-project.org/) does have a steep learning curve that can often be intimidating to new users, particularly those without prior coding experience. While this can be very frustrating in the initial stages, learning [R](https://cran.r-project.org/) is like learning a language where proficiency requires practice and continual use of the program.
 
-## Installing R and R-Studio
+### Installing R and R-Studio
 
 [R](https://cran.r-project.org/) is available for Linux, MacOS X, and Windows (95 or later) platforms. Software can be downloaded from one of the Comprehensive R Archive Network (CRAN) mirror sites. It’s best to choose the [R](https://cran.r-project.org/) mirror that is closest to your location. Once installed, [R](https://cran.r-project.org/) will open a console where you run code. You can also work on a script file (preferred), where you can write and (importantly) save your work.
 
 [R-Studio](https://posit.co/download/rstudio-desktop) is an enterprise-ready professional software tool that integrates with [R](https://cran.r-project.org/). This integrated development environment (IDE) has some nice features beyond the normal R interface.
 ![R](assets/R.png)
 
-## R-Studio IDE
+### R-Studio IDE
 
 [R-Studio](https://posit.co/download/rstudio-desktop) has four separate panels to organize your workflow and project. The entire interface is customizable, including fonts and colors of the text and background (see Customizing [R-Studio](https://posit.co/download/rstudio-desktop)). The four panels are:
 
@@ -31,7 +31,7 @@
 - Environment/History (upper right)
 - Files/Plots/Packages/Help (lower left)
 
-## Getting Help
+### Getting Help
 
 One of the most useful and important commands in [R](https://cran.r-project.org/) is `?`. All [R](https://cran.r-project.org/) functions should have an associated help file. At the command prompt (signified by `>` in your Console window), type `?` followed by any command and you will be prompted with a help tab for that command (e.g., `?mean` or `help(mean)`). Note, you can also search through the help tab directly by searching functions on the search bar.
 
@@ -49,9 +49,9 @@ Note that it’s important to read the error messages that [R](https://cran.r-pr
 
 ## R Fundamentals
 
-# Data Structure in R
+## Data Structure in R
 
-# Other Resources: SWIRL
+## Other Resources: SWIRL
 
 [R](https://cran.r-project.org/) packages are the building blocks of computational reproducibility in [R](https://cran.r-project.org/). Each package contains a set of related functions that enable you to more easily do a task or set of tasks in [R](https://cran.r-project.org/). There are thousands of community-maintained packages out there for just about every imaginable use of [R](https://cran.r-project.org/).
 
