@@ -49,19 +49,22 @@ Note that it’s important to read the error messages that [R](https://cran.r-pr
 
 ## R Fundamentals
 
-## Data Structure in R
+## Data Structures in R
+
+
 
 ## Other Resources: SWIRL
 
 [R](https://cran.r-project.org/) packages are the building blocks of computational reproducibility in [R](https://cran.r-project.org/). Each package contains a set of related functions that enable you to more easily do a task or set of tasks in [R](https://cran.r-project.org/). There are thousands of community-maintained packages out there for just about every imaginable use of [R](https://cran.r-project.org/).
 
 SWIRL is a user-generated program **package** (also called a **library**) for learning how to code in [R](https://cran.r-project.org/). To access the tutorial information, you must first install the package to make it accessible. In the Console window (bottom left), type the following and press ENTER:
+![swirl](assets/swirl.png)
 
 ```
 install.packages("swirl")
 ```
 
-This may take a little while, but when the stop sign in the upper right of the console window is gone, you can proceed. For any package you install in [R](https://cran.r-project.org/), you will also need to turn them on before using them. You can do this with the require() or library() functions. Type this now:
+This may take a little while, but when the stop sign in the upper right of the console window is gone, you can proceed. For any package you install in [R](https://cran.r-project.org/), you will also need to turn them on before using them. You can do this with the `require()` or `library()` functions. Type this now:
 
 ```
 library(swirl)
@@ -75,7 +78,7 @@ To install the lesson, you will need to use:
 install_from_swirl("R Programming")
 ```
 
-*Find out more about other courses, and other download options here: https://github.com/swirldev/swirl_courses*
+*Find out more about other courses, and other download options here: [https://github.com/swirldev/swirl_courses](https://github.com/swirldev/swirl_courses)*
 
 ### SWIRL Lessons
 
