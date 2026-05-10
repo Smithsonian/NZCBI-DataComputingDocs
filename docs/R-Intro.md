@@ -15,14 +15,14 @@
 
 [R](https://cran.r-project.org/) does have a steep learning curve that can often be intimidating to new users, particularly those without prior coding experience. While this can be very frustrating in the initial stages, learning [R](https://cran.r-project.org/) is like learning a language where proficiency requires practice and continual use of the program.
 
-## Installing [R](https://cran.r-project.org/) and [R-Studio](https://posit.co/download/rstudio-desktop)
+## Installing R and R-Studio
 
 [R](https://cran.r-project.org/) is available for Linux, MacOS X, and Windows (95 or later) platforms. Software can be downloaded from one of the Comprehensive R Archive Network (CRAN) mirror sites. It’s best to choose the [R](https://cran.r-project.org/) mirror that is closest to your location. Once installed, [R](https://cran.r-project.org/) will open a console where you run code. You can also work on a script file (preferred), where you can write and (importantly) save your work.
 
 [R-Studio](https://posit.co/download/rstudio-desktop) is an enterprise-ready professional software tool that integrates with [R](https://cran.r-project.org/). This integrated development environment (IDE) has some nice features beyond the normal R interface.
 ![R](assets/R.png)
 
-## [R-Studio](https://posit.co/download/rstudio-desktop) IDE
+## R-Studio IDE
 
 [R-Studio](https://posit.co/download/rstudio-desktop) has four separate panels to organize your workflow and project. The entire interface is customizable, including fonts and colors of the text and background (see Customizing [R-Studio](https://posit.co/download/rstudio-desktop)). The four panels are:
 
@@ -38,6 +38,71 @@ One of the most useful and important commands in [R](https://cran.r-project.org/
 Various blogs, mailing lists, and websites (e.g., https://stackoverflow.com/) are dedicated to providing information about [R](https://cran.r-project.org/), its packages, and potential error messages that you may encounter (among other things). The trick is usually determining the key terms to limit your search. 
 
 Note that it’s important to read the error messages that [R](https://cran.r-project.org/) provides. These messages help understand when you have typed something that the computer doesn’t understand. 
-![Error](assets/Error.png "Artwork by [Allison Horst](https://allisonhorst.com/allison-horst)")
+![Error](assets/Error.png)
 *Artwork by [Allison Horst](https://allisonhorst.com/allison-horst)
 
+## Basic R Concepts
+
+### Naming Conventions
+
+## Starting R - Setting your working directory
+
+## R Fundamentals
+
+# Data Structure in R
+
+# Other Resources: SWIRL
+
+[R](https://cran.r-project.org/) packages are the building blocks of computational reproducibility in [R](https://cran.r-project.org/). Each package contains a set of related functions that enable you to more easily do a task or set of tasks in [R](https://cran.r-project.org/). There are thousands of community-maintained packages out there for just about every imaginable use of [R](https://cran.r-project.org/).
+
+SWIRL is a user-generated program **package** (also called a **library**) for learning how to code in [R](https://cran.r-project.org/). To access the tutorial information, you must first install the package to make it accessible. In the Console window (bottom left), type the following and press ENTER:
+
+```
+install.packages("swirl")
+```
+
+This may take a little while, but when the stop sign in the upper right of the console window is gone, you can proceed. For any package you install in [R](https://cran.r-project.org/), you will also need to turn them on before using them. You can do this with the require() or library() functions. Type this now:
+
+```
+library(swirl)
+```
+
+**Note:** You may be prompted to select a “mirror” from which to download the package. If this is the case, it is recommended that you choose the mirror that is geographically closest to you.
+
+To install the lesson, you will need to use:
+
+```
+install_from_swirl("R Programming")
+```
+
+*Find out more about other courses, and other download options here: https://github.com/swirldev/swirl_courses*
+
+### SWIRL Lessons
+
+There are many lessons within [R](https://cran.r-project.org/). Once SWIRL is loaded, you will be given the option of which lessons to complete. Some of the core lessons can be found in the initial section labeled R Programming. The estimated time to compete required lessons is about 2 hours. We recommend to start with the following lessons:
+
+1. **Basic Building Blocks (10 min)**
+2. **Workspace and Files (15 min)**
+3. **Sequences of Numbers (5 min)**
+4. **Vectors (8 min)**
+5. **Missing Values (5 min)**
+6. **Subsetting Vectors (12 min)**
+7. **Matrices and Data Frames (13 min)**
+8. Logic (optional)
+9. **Functions (30 min)**
+10. lapply and sapply (optional)
+11. vapply and tapply (optional)
+12. **Looking at Data (5 min)**
+13. Simulation (optional)
+14. Dates and Times (10 min) (optional)
+15. **Base Graphics (10 Min)**
+
+### Run SWIRL
+
+Type the following to begin using SWIRL. Also, when restarting your session later, you’ll need to “turn on” SWIRL each time with either `library(swirl)` or `require(swirl)`.
+
+```
+swirl()
+```
+
+**Have Fun!**
