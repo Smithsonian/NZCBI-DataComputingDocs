@@ -39,4 +39,5 @@ Various blogs, mailing lists, and websites (e.g., https://stackoverflow.com/) ar
 
 Note that it’s important to read the error messages that [R](https://cran.r-project.org/) provides. These messages help understand when you have typed something that the computer doesn’t understand. 
 ![Error](assets/Error.png "Artwork by [Allison Horst](https://allisonhorst.com/allison-horst)")
+*Artwork by [Allison Horst](https://allisonhorst.com/allison-horst)
 
