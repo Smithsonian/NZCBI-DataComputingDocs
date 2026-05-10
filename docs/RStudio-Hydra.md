@@ -11,7 +11,7 @@ Users can leverage this server to test, debug, and develop [R](https://cran.r-pr
 
 The [R Studio](https://posit.co/download/rstudio-desktop) environment is accessible directly via a browser, at https://galaxy.si.edu/R4.
 
-Just like the other components of Hydra, this server is only accessible from computers connected to Smithsonian networks (i.e., VPN, telework.si.edu, or on-site networks), not on the public internet. Instructions for remote access are provided below.
+Just like the other components of Hydra, this server is only accessible from computers connected to Smithsonian networks (i.e., VPN, telework.si.edu, or on-site networks), not on the public internet. Instructions for remote access are provided [below](## Remote access).
 
 1. Open https://galaxy.si.edu/R4 in a browser on a computer that has access to Hydra.
 2. Log in with your Hydra username (all lowercase) and password.
@@ -45,7 +45,19 @@ The dedicated R Studio Server node has:
 
 Be mindful that the [R Studio](https://posit.co/download/rstudio-desktop) Server is a shared resource. Please terminate idle R Sessions to free up memory for other users.
 
-##
+## Remote access
+
+The [R Studio](https://posit.co/download/rstudio-desktop) Server can be accessed directly from your browser if your computer has one of the VPN enabled that gives access to Hydra.
+
+The Smithsonian Telework website, https://telework.si.edu, can be used to access Hydra without a VPN.
+
+Log into
+https://telework.si.edu
+In the text box in the top left of the window, under the Smithsonian logo, labeled "Enter an internal resource" enter:
+https://galaxy.si.edu/R4
+and then press the enter/return key.
+
+The RStudio Server login page will open in the same way as if you were onsite.
 
 
 	
