@@ -1,7 +1,7 @@
 # Guide 4: Running R-Studio from Hydra
 
 !!! tip "For the Most Up to Date Information"
-    This information provided here is adapted from a Smithsonian guide from the Office of Data and Innovation entitled ["Using the RStudio Server"](https://confluence.si.edu/spaces/HPC/pages/385975502/Using+the+RStudio+Server). Please refer to the source documentation for full instructions.
+    The information provided here is adapted from Smithsonian's guide on ["Using the RStudio Server"](https://confluence.si.edu/spaces/HPC/pages/385975502/Using+the+RStudio+Server). Please refer to the source documentation for full instructions.
 	
 Hydra offers a dedicated [R Studio](https://posit.co/download/rstudio-desktop) Server for interactive running of [R](https://cran.r-project.org/)-based workflows using a familiar GUI.
 
@@ -22,6 +22,8 @@ Just like the other components of Hydra, this server is only accessible from com
 You can install packages, runs scripts, create [R](https://cran.r-project.org/) projectsin the same way as you would on your workstation. 
 
 4. The "Files" tab shows Hydra's storage systems. You have access to Hydra's /home, /scratch, /data, and /store directories. You can use the [R Studio](https://posit.co/download/rstudio-desktop) Server interface to transfer files or use other file transfer tools. 
+
+![Files](/docs/images/Files.png)
 
 6. All computations are performed on the dedicated server. If you close the browser window, your R session continues so objects in memory are preserved and computations will continue. 
 
