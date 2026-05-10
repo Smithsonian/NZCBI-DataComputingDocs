@@ -5,7 +5,7 @@
 	
 Hydra offers a dedicated [R Studio](https://posit.co/download/rstudio-desktop) Server for interactive running of [R](https://cran.r-project.org/)-based workflows using a familiar GUI.
 
-Users can leverage this server to test, debug, and develop [R](https://cran.r-project.org/) based workflows using the interactive R Studio GUI (currently running R 4.5.2). By logging in with your Hydra account credentials, you will have access to the storage under /data, /scratch and /store.
+Users can leverage this server to test, debug, and develop [R](https://cran.r-project.org/) based workflows using the interactive R Studio GUI (currently running R 4.5.2). By logging in with your Hydra account credentials, you will have access to the storage under `/data`, `/scratch` and `/store`.
 
 ## Getting Started
 
