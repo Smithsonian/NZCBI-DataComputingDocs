@@ -135,7 +135,7 @@ numbers * 3
 
 ### Vectors
 
-Vectors are a basic data structure in R. They contain a sequence of data and can contain characters, numbers, or be TRUE/FALSE values. Below are several examples of simple vectors.
+Vectors are a basic data structure in R. They contain a sequence of data and can contain characters, numbers, or be `TRUE/FALSE` values. Below are several examples of simple vectors.
 
 !!! note "Getting help"
     If you are unsure or need help, use the help function (e.g., `help(seq)` or `?seq`).
@@ -148,11 +148,11 @@ rep(1:5,5)
 rep("A rolling stone gathers no moss",4)
 ```
 
-### Vector Notation
+#### Vector Notation
 To see only part (i.e., a subset) of the data stored in a vector, you need to “ask” R to extract the information you want using square brackets (e.g., []). Most commonly, you will indicate in square brackets the position of the data you want to extract (from beginning of the vector [1] to the Nth slot in the vector [n]).
 
 ```
-# Create vectcor
+# Create vector
 x <- c(1,3,8,21,48,56,4,29,182,5)
 x
 # Using vector notation, we can extract any number in the sequence.  For instance, x[4] will return the 4th number in the sequence
@@ -171,10 +171,15 @@ test_matrix <- matrix(data = x, nrow = 4, ncol = 5)
 test_matrix
 ```
 
+#### Subsetting Matrics and Dataframes
+
+Now, if we wanted to reference any value in the matrix, we could do so with matrix notation. The first value in matrix notation references the row and the second value references the column. 
+
 ```
-# Note, you can assign any name to an object (as below), but it is best practice to choose meaningful names. 
-superman <- matrix(data = x, nrow = 4, ncol = 5)
+# test_matrix(row,column)
+test_matrix[1,5]
 ```
+
 
 ### Functions
 
