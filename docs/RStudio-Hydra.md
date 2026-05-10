@@ -57,9 +57,9 @@ and then press the enter/return key.
 
 ## R-Studio Server vs R Workstation
 	
-Using [R-Studio](https://posit.co/download/rstudio-desktop) Server is nearly identical to running the standard workstation version of [R-Studio](https://posit.co/download/rstudio-desktop). Below are some instances where they differ:
+Using [R-Studio](https://posit.co/download/rstudio-desktop) Server is nearly identical to running the standard workstation version of [R-Studio](https://posit.co/download/rstudio-desktop). However, some key differences exist:
 
-- File transfer
+1. File transfer
 
 Your data must be transferred to/from Hydra to work on it - directories in `/home`, `/data`, and `/scratch` are all available on this server. Note: `/store` is not available at this time. The Hydra storage guidance, quotas, and scrubber policies apply to data used through the dedicated [R-Studio](https://posit.co/download/rstudio-desktop) Server. 
 
@@ -69,29 +69,27 @@ In addition to the existing file transfer tools for Hydra (see the [file transfe
 
 - **Upload** from your computer to Hydra: use the “Upload” button in the Files tag
 ![Upload](assets/Upload.png)
-- Only one file can be uploaded at a time. Create a zip archive on your computer to upload several files at once. [R-Studio](https://posit.co/download/rstudio-desktop) Server will unzip them automatically when they’re received.
+	- Only one file can be uploaded at a time. Create a zip archive on your computer to upload several files at once. [R-Studio](https://posit.co/download/rstudio-desktop) Server will unzip them automatically when they’re received.
 
 - **Download** from Hydra to your computer
-- Select the checkboxes for files and folders you want to download.
-- Click the “More” button.
-- Choose “Export…”
-![Download](assets/Download.png)
-- In the pop-up window click the Download button to save to your computer. If multiple files or a folder was selected, it will be zipped automatically prior to download.
-![PopUp](assets/PopUp.png)
+	- Select the checkboxes for files and folders you want to download.
+	- Click the “More” button.
+	- Choose “Export…”
+	![Download](assets/Download.png)
+	- In the pop-up window click the Download button to save to your computer. If multiple files or a folder was selected, it will be zipped automatically prior to download.
+	![PopUp](assets/PopUp.png)
 
-- [R](https://cran.r-project.org/) Session
+2. [R](https://cran.r-project.org/) Session
 
 Your [R](https://cran.r-project.org/) session will continue to run on the server when you close your browser window or log off your computer. Any analyses underway will continue and your memory will be preserved. To re-connect to your R session, log back in to the RStudio Server. This will work even if you log back on from a different computer. This allows you to start a long analysis on the server and then disconnect.
 
-Ending your R Session
-When you have completed your work on the RStudio Server, please quit your R session to free resources for other users.
+**Ending your R Session**
+When you have completed your work on the [R-Studio](https://posit.co/download/rstudio-desktop) Server, please quit your [R](https://cran.r-project.org/) session to free resources for other users.
 
 Use “Quit Session...” from the Session or File menu.
 ![Session](assets/Session.png)
 
-One R Session limit
-RStudio Server only allows one R session per user. This means that if you have an existing session and log in to the server via a browser, control of that session will switch to the current browser. There is not a way to have more than one browser window open with different RStudio and R sessions.
+**One R Session limit**
+[R-Studio](https://posit.co/download/rstudio-desktop) Server only allows one [R](https://cran.r-project.org/) session per user. This means that if you have an existing session and log in to the server via a browser, control of that session will switch to the current browser. There is not a way to have more than one browser window open with different RStudio and R sessions.
 
-One workaround is to use the “Background Jobs” tab to run multiple analyses at one time. See https://docs.posit.co/ide/user/ide/guide/tools/jobs.html
-
-
+## Additional Information
