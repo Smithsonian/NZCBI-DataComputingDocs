@@ -60,7 +60,6 @@ and then press the enter/return key.
 Using [R-Studio](https://posit.co/download/rstudio-desktop) Server is nearly identical to running the standard workstation version of [R-Studio](https://posit.co/download/rstudio-desktop). However, some key differences exist:
 
 1. File transfer
-
 Your data must be transferred to/from Hydra to work on it - directories in `/home`, `/data`, and `/scratch` are all available on this server. Note: `/store` is not available at this time. The Hydra storage guidance, quotas, and scrubber policies apply to data used through the dedicated [R-Studio](https://posit.co/download/rstudio-desktop) Server. 
 
 In addition to the existing file transfer tools for Hydra (see the [file transfer guide](https://confluence.si.edu/spaces/HPC/pages/163152227/Transferring+Files+to+from+Hydra), [quick start guide](https://confluence.si.edu/spaces/HPC/pages/163152218/Quick+Start+Guide), and [Globus](https://smithsonian.github.io/globus-docs/)), [R-Studio](https://posit.co/download/rstudio-desktop) Server has built-in tools for file transfers. These built-in tools are best for small files or quick edits. For large files or large file sets consider other file transfer tools.
@@ -80,16 +79,15 @@ In addition to the existing file transfer tools for Hydra (see the [file transfe
 	![PopUp](assets/PopUp.png)
 
 2. [R](https://cran.r-project.org/) Session
-
 Your [R](https://cran.r-project.org/) session will continue to run on the server when you close your browser window or log off your computer. Any analyses underway will continue and your memory will be preserved. To re-connect to your R session, log back in to the RStudio Server. This will work even if you log back on from a different computer. This allows you to start a long analysis on the server and then disconnect.
 
-**Ending your R Session**
+**Ending your [R](https://cran.r-project.org/) Session**
 When you have completed your work on the [R-Studio](https://posit.co/download/rstudio-desktop) Server, please quit your [R](https://cran.r-project.org/) session to free resources for other users.
 
 Use “Quit Session...” from the Session or File menu.
 ![Session](assets/Session.png)
 
-**One R Session limit**
+**One [R](https://cran.r-project.org/) Session limit**
 [R-Studio](https://posit.co/download/rstudio-desktop) Server only allows one [R](https://cran.r-project.org/) session per user. This means that if you have an existing session and log in to the server via a browser, control of that session will switch to the current browser. There is not a way to have more than one browser window open with different RStudio and R sessions.
 
 ## Additional Information
