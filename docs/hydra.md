@@ -1,5 +1,3 @@
-# Guide 3: Running Jobs on Hydra (the Smithsonian HPC Cluster)
-
 Hydra is the Smithsonian's high-performance computing (HPC) cluster — a shared system of compute nodes you can use for analyses that won't run (or run too slowly) on a laptop. Genomic assembly, phylogenetic inference, large-scale image analysis, simulations, and bioacoustic processing are all common Hydra workloads at NZCBI.
 
 Hydra is administered by the Office of the Chief Data Officer (under the Office of Digital and Innovation), the same office that maintains the Globus documentation linked elsewhere on this site.

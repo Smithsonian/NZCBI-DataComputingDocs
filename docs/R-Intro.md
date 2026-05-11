@@ -1,5 +1,3 @@
-# Guide 2: Introduction to R
-
 !!! tip "A Compilation of Resources"
     This guide is a compilation of material developed by various Smithsonian researchers. Many thanks to all for sharing their code and knowledge in courses being taught at the Smithsonian-Mason School of Conservation (SMSC). Also included is material from workflows developed by the National Center for Ecological Analysis and Synthesis (NCEAS) of the University of California - Santa Barbara. We encourage you to investigate the courses being taught at [SMSC](https://smconservation.gmu.edu/) and the resources available at [NCEAS](https://www.nceas.ucsb.edu/learning-hub).
 

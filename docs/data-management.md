@@ -1,5 +1,3 @@
-# Guide 1: Data Management Basics
-
 Information being developed.  Check back soon.
 
 

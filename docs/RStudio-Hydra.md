@@ -1,5 +1,3 @@
-# Guide 4: Running R-Studio from Hydra
-
 !!! tip "For the Most Up to Date Information"
     The information provided here is adapted from the Smithsonian guide on ["Using the R-Studio Server"](https://confluence.si.edu/spaces/HPC/pages/385975502/Using+the+RStudio+Server). Please refer to the source documentation for full instructions.
 	
