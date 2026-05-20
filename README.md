@@ -1,1 +1,1 @@
-Data & Computing at the Smithsonian National Zoo & Conservation Biology Institute.
+Practical data & domputing documentation for researchers at the Smithsonian National Zoo & Conservation Biology Institute.
