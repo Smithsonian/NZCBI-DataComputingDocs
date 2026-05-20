@@ -1,1 +1,1 @@
-Practical data & domputing documentation for researchers at the Smithsonian National Zoo & Conservation Biology Institute.
+Practical data & computing documentation for researchers at the Smithsonian National Zoo & Conservation Biology Institute.
