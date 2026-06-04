@@ -35,7 +35,7 @@ theme:
 
 nav:
   - Home: index.md
-  - "Guide 1: Data Management Basics (K.Long - In Progress)": data-management.md
+  - "Guide 1: Data Management Basics": data-management.md
   - "Guide 2: Introduction to R": R-Intro.md
   - "Guide 3: Getting Started on Hydra": hydra.md
   - "Guide 4: Running R-Studio from Hydra": RStudio-Hydra.md
