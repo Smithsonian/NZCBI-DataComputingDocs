@@ -40,8 +40,7 @@ nav:
   - "Guide 3: Getting Started on Hydra": hydra.md
   - "Guide 4: Running R-Studio from Hydra": RStudio-Hydra.md
   - "Guide 5: Initiate a Repo with GitHub": github.md
-  - "Guide 6: Computing Standards (In Progress)": computing-standards.md
-  - "Guide 7: Understanding the Data Lifecycle (C. Fergus - In Progress)": data-lifecycle.md
+  - "Guide 6: Understanding the Data Lifecycle (C. Fergus - In Progress)": data-lifecycle.md
 
 markdown_extensions:
   - toc:
