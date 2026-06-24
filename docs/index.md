@@ -25,8 +25,7 @@ Whether you're working with camera trap imagery, acoustic recordings, genomic se
 | **Run computational analyses on Hydra** &mdash; log in, submit jobs, monitor progress, manage data | [Guide 3: Getting Started on Hydra](hydra.md) |
 | **Use Hydra for R-Studio analyses** &mdash; connect, access, supercharge data analysis | [Guide 4: Running R-Studio from Hydra](RStudio-Hydra.md) |
 | **Share and archive code using github** &mdash; store, manage, track, share | [Guide 5: Initiate a Repo with GitHub](github.md) |
-| **Develop data computing standards** &mdash; enable interoperatiliby, improve efficiency, and foster collaboration | [Guide 6: Data Computing Standards](computing-standards.md) |
-| **Learn about the data lifecycle** &mdash; plan, create/collect, store, use, share, archive/destroy | [Guide 7: Understanding the Data Lifecycle](data-lifecycle.md) |
+| **Learn about the data lifecycle** &mdash; plan, create/collect, store, use, share, archive/destroy | [Guide 6: Understanding the Data Lifecycle](data-lifecycle.md) |
 | **More guides** &mdash; coming soon | &mdash; |
 
 !!! note "This site is actively being developed"
