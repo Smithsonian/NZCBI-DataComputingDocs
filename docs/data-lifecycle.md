@@ -10,7 +10,7 @@ While organizations and institutions may define the lifecycle differently, most 
 
 For readers interested in a more detailed and research-focused framework, we also recommend reviewing the [Harvard Biomedical Data Lifecycle](https://datamanagement.hms.harvard.edu/plan-design/biomedical-data-lifecycle), shown here:
 
-!\[Harvard Biomedical Data Lifecycle](assets/Harvard\_LifeCycle.png)
+!\[Harvard Biomedical Data Lifecycle](assets/Error.png)
 
 
 
