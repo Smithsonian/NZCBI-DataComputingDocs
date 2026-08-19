@@ -12,7 +12,7 @@ Practical guides for managing research data and using computing resources at the
 
 Whether you're working with camera trap imagery, acoustic recordings, genomic sequences, GIS layers, high resolution satellite imagery, or video from animal behavior studies, these guides cover how to organize, store, share, and compute on your data using NZCBI and Smithsonian-supported systems.
 
-[Get started with data management :material-arrow-right:](data-management.md){ .md-button .md-button--primary }
+[Get started with understanding the data lifecycle :material-arrow-right:](data-lifecycle.md){ .md-button .md-button--primary }
 
 </div>
 
