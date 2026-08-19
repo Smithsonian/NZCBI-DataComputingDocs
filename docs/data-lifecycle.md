@@ -6,7 +6,9 @@ The term data management can mean different things to different people depending
 
 The lifecycle presented here builds on concepts developed by the U.S. Geological Survey ([USGS](https://www.usgs.gov/data-management/data-lifecycle)) and [Harvard Business School](https://online.hbs.edu/blog/post/data-life-cycle). For readers interested in a more detailed and research-focused framework, we also recommend reviewing the [Harvard Biomedical Data Lifecycle](https://datamanagement.hms.harvard.edu/plan-design/biomedical-data-lifecycle).
 
-!\[Lifecycle](docs/assets/Lifecycle.png)
+
+
+!\[Lifecycle](assets/Lifecycle.png)
 
 
 
