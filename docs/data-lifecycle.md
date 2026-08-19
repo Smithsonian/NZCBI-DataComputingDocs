@@ -4,7 +4,7 @@ The term data management can mean different things to different people depending
 
 
 
-The lifecycle presented here builds on concepts developed by the U.S. Geological Survey ([USGS](https://www.usgs.gov/data-management/data-lifecycle)) and [Harvard Business School](https://online.hbs.edu/blog/post/data-life-cycle). For readers interested in a more detailed and research-focused framework, we also recommend reviewing the [Harvard Biomedical Data Lifecycle](https://datamanagement.hms.harvard.edu/plan-design/biomedical-data-lifecycle).
+The lifecycle presented here builds on concepts developed by the U.S. Geological Survey ([USGS](https://www.usgs.gov/data-management/data-lifecycle)) and the [Harvard Business School](https://online.hbs.edu/blog/post/data-life-cycle). For readers interested in a more detailed and research-focused framework, we also recommend reviewing the [Harvard Biomedical Data Lifecycle](https://datamanagement.hms.harvard.edu/plan-design/biomedical-data-lifecycle), shown here:
 
 
 
@@ -14,8 +14,13 @@ The lifecycle presented here builds on concepts developed by the U.S. Geological
 
 ## Step 1- Plan
 
-What you are doing right now! Before starting a project taking the time to think through the workflow your data will take over the course of a project or program will go a long way towards avoiding mistakes, saving time and resources, and generally minimizing headaches.
-The best practice is to formalize these plans through a standing document shared with all members of your team. The NZCBI data community will be developing specific guidance for this in the future but for now we point you towards this [USGS resource page](https://www.usgs.gov/data-management/data-management-plans)
+Before starting any project, it's important to take time to think through your data workflow and plan how your data will be managed throughout the project's lifecycle. Planning data workflows in advance can help prevent mistakes, save time and resources, and reduce unnecessary challenges.
+
+
+
+A best practice is to document these plans in a living document that is shared with all members of your team. The NZCBI data community plans to develop more specific guidance on this topic in the future. In the meantime, we recommend reviewing this [USGS resource page](https://www.usgs.gov/data-management/data-management-plans) for more information.
+
+
 
 ## Step 2- Generation
 
