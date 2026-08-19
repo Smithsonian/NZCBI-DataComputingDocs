@@ -20,12 +20,12 @@ Whether you're working with camera trap imagery, acoustic recordings, genomic se
 
 | I want to&hellip; | Start here |
 |---|---|
-| **Organize my project data** &mdash; naming conventions, folder structure, metadata, backup strategy | [Guide 1: Data Management Basics](data-management.md) |
-| **Learn the basics of R** &mdash; install, basic concepts, data manipulation, analysis, summary | [Guide 2: Introduction to R](R-Intro.md) |
-| **Run computational analyses on Hydra** &mdash; log in, submit jobs, monitor progress, manage data | [Guide 3: Getting Started on Hydra](hydra.md) |
-| **Use Hydra for R-Studio analyses** &mdash; connect, access, supercharge data analysis | [Guide 4: Running R-Studio from Hydra](RStudio-Hydra.md) |
-| **Share and archive code using github** &mdash; store, manage, track, share | [Guide 5: Initiate a Repo with GitHub](github.md) |
-| **Learn about the data lifecycle** &mdash; plan, create/collect, store, use, share, archive/destroy | [Guide 6: Understanding the Data Lifecycle](data-lifecycle.md) |
+| **Learn about the data lifecycle** &mdash; plan, create/collect, store, use, share, archive/destroy | [Guide 1: Understanding the Data Lifecycle](data-lifecycle.md) |
+| **Organize my project data** &mdash; naming conventions, folder structure, metadata, backup strategy | [Guide 2: Data Management Basics](data-management.md) |
+| **Learn the basics of R** &mdash; install, basic concepts, data manipulation, analysis, summary | [Guide 3: Introduction to R](R-Intro.md) |
+| **Run computational analyses on Hydra** &mdash; log in, submit jobs, monitor progress, manage data | [Guide 4: Getting Started on Hydra](hydra.md) |
+| **Use Hydra for R-Studio analyses** &mdash; connect, access, supercharge data analysis | [Guide 5: Running R-Studio from Hydra](RStudio-Hydra.md) |
+| **Share and archive code using github** &mdash; store, manage, track, share | [Guide 6: Initiate a Repo with GitHub](github.md) |
 | **More guides** &mdash; coming soon | &mdash; |
 
 !!! note "This site is actively being developed"
