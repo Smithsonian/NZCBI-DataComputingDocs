@@ -8,7 +8,7 @@ The lifecycle presented here builds on concepts developed by the U.S. Geological
 
 
 
-!\[Lifecycle](assets/Lifecycle.png)
+![Lifecycle](assets/Lifecycle.png)
 
 
 
