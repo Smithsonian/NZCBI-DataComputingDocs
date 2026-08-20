@@ -1,0 +1,353 @@
+/* NZCBI Brand Colors
+ * Hex values extracted from nationalzoo.si.edu's compiled Tailwind theme
+ * (tailwind_nzp). Token names match the zoo site's design system.
+ */
+:root {
+  /* Primary brand */
+  --nzcbi-oxford-blue: #002554;       /* primary — header, H1, primary buttons */
+  --nzcbi-sap-green: #53782b;         /* secondary green — icons, accents */
+  --nzcbi-tea-green: #c4dea6;         /* light green — button bg, title bar */
+  --nzcbi-winter-green: #8bc43f;      /* bright accent green */
+
+  /* Accents */
+  --nzcbi-cyber-yellow: #ffcd00;      /* CTA / active state */
+  --nzcbi-bootiful-orange: #f36621;   /* warm accent */
+  --nzcbi-pacific-blue: #009cde;      /* interactive secondary */
+  --nzcbi-blue-sapphire: #165c7d;     /* secondary button / link hover */
+  --nzcbi-sizzling-red: #f0515a;      /* alert / danger */
+
+  /* Neutrals */
+  --nzcbi-ice-blue: #eaf6f8;
+  --nzcbi-off-white: #faf8f3;
+
+  /* Apply to Material theme */
+  --md-primary-fg-color: #002554;
+  --md-primary-fg-color--light: #165c7d;
+  --md-primary-fg-color--dark: #001635;
+  --md-accent-fg-color: #009cde;
+  --md-typeset-a-color: #165c7d;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #165c7d;
+  --md-accent-fg-color: #ffcd00;
+  --md-typeset-a-color: #8bc43f;
+}
+
+/* Match the zoo site's typeface */
+body,
+.md-typeset {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Header styling */
+.md-header {
+  background-color: var(--nzcbi-oxford-blue);
+}
+
+.md-header__button.md-logo {
+  padding: 0;
+}
+
+.md-header__button.md-logo img {
+  height: 32px;
+  width: auto;
+}
+
+/* Navigation tabs */
+.md-tabs {
+  background-color: var(--nzcbi-oxford-blue);
+}
+
+/* Links */
+.md-typeset a {
+  color: var(--nzcbi-blue-sapphire);
+}
+
+.md-typeset a:hover {
+  color: var(--nzcbi-pacific-blue);
+}
+
+/* Buttons — primary uses the zoo's tea-green + oxford-blue text, matching .btn-primary on the site */
+.md-typeset .md-button {
+  background-color: var(--nzcbi-tea-green);
+  border-color: var(--nzcbi-tea-green);
+  color: var(--nzcbi-oxford-blue);
+}
+
+.md-typeset .md-button:hover {
+  background-color: var(--nzcbi-winter-green);
+  border-color: var(--nzcbi-winter-green);
+  color: var(--nzcbi-oxford-blue);
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--nzcbi-oxford-blue);
+  border-color: var(--nzcbi-oxford-blue);
+  color: #ffffff;
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: var(--nzcbi-blue-sapphire);
+  border-color: var(--nzcbi-blue-sapphire);
+}
+
+/* Card grid styling */
+.md-typeset .grid.cards > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--nzcbi-sap-green);
+  box-shadow: 0 4px 12px rgba(0, 37, 84, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+  background: var(--md-default-bg-color);
+  border-color: var(--md-default-fg-color--lightest);
+}
+
+/* Admonitions — mapped to NZCBI's alert palette
+   note = pacific-blue (info), tip = sap-green (success),
+   warning = cyber-yellow, danger = sizzling-red */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--nzcbi-pacific-blue);
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(0, 156, 222, 0.1);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.success,
+.md-typeset details.success {
+  border-color: var(--nzcbi-sap-green);
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary,
+.md-typeset .success > .admonition-title,
+.md-typeset .success > summary {
+  background-color: rgba(83, 120, 43, 0.1);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--nzcbi-cyber-yellow);
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(255, 205, 0, 0.15);
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger,
+.md-typeset .admonition.failure,
+.md-typeset details.failure {
+  border-color: var(--nzcbi-sizzling-red);
+}
+
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary,
+.md-typeset .failure > .admonition-title,
+.md-typeset .failure > summary {
+  background-color: rgba(240, 81, 90, 0.1);
+}
+
+/* Table styling */
+.md-typeset table:not([class]) th {
+  background-color: var(--nzcbi-oxford-blue);
+  color: white;
+}
+
+/* Footer */
+.md-footer {
+  background-color: var(--nzcbi-oxford-blue);
+}
+
+/* Search */
+.md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Code blocks — tinted with tea-green, colored with oxford-blue (matches zoo's body + headings palette) */
+.md-typeset code {
+  background-color: rgba(196, 222, 166, 0.25);
+  color: var(--nzcbi-oxford-blue);
+}
+
+/* Horizontal rules */
+.md-typeset hr {
+  border-color: var(--nzcbi-tea-green);
+}
+
+/* Icon colors in cards */
+.md-typeset .grid.cards .twemoji,
+.md-typeset .grid.cards .emojione,
+.md-typeset .grid.cards svg {
+  color: var(--nzcbi-sap-green);
+}
+
+/* Mermaid diagram styling */
+.mermaid {
+  background: transparent;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1.3rem;
+  color: #5c5d5d;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Larger icons in cards */
+.md-typeset .grid.cards .lg {
+  font-size: 2rem;
+  color: var(--nzcbi-sap-green);
+}
+
+/* Content max-width — bumped from 900px to 1200px so tables and the hero
+   have more room. Adjust if prose feels too wide on very large monitors. */
+.md-content__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Four cards per row on desktop */
+@media (min-width: 900px) {
+  .md-typeset .grid.cards > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Smaller card padding for 4-column layout */
+.md-typeset .grid.cards > ul > li {
+  padding: 1rem;
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  display: inline-table;
+  min-width: 50%;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--nzcbi-oxford-blue);
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border: none;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.md-typeset table:not([class]) tr:last-child td {
+  border-bottom: none;
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background-color: rgba(234, 246, 248, 0.5);
+}
+
+/* Zebra striping */
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background-color: var(--nzcbi-off-white);
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even):hover {
+  background-color: var(--nzcbi-ice-blue);
+}
+
+/* Professional button styling */
+.md-typeset .md-button {
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Full-width content on home page */
+.md-content {
+  max-width: 100%;
+}
+
+/* Two-column layout for stacked sections — wraps two markdown blocks
+   into a side-by-side grid. Use:
+   <div class="table-grid" markdown>
+     <div markdown>...</div>
+     <div markdown>...</div>
+   </div> */
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Hero section — tea-green tint with oxford-blue accent bar,
+   echoing the zoo's .page-title pattern */
+.hero {
+  background: linear-gradient(135deg, var(--nzcbi-off-white) 0%, var(--nzcbi-ice-blue) 100%);
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--nzcbi-tea-green);
+}
+
+.hero h1 {
+  margin-top: 0;
+  color: var(--nzcbi-oxford-blue);
+}
+
+/* Section headers */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--nzcbi-oxford-blue);
+}
+
+.md-typeset h2 {
+  border-bottom: 2px solid var(--nzcbi-tea-green);
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+/* Compact tables */
+.md-typeset table:not([class]) {
+  width: 100%;
+  min-width: unset;
+}
+
+/* Footer buttons centered */
+.button-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}

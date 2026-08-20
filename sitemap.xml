@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://smithsonian.github.io/NZCBI-DataComputingDocs/index.html</loc>
+         <lastmod>2026-08-20</lastmod>
+    </url>
+    <url>
+         <loc>https://smithsonian.github.io/NZCBI-DataComputingDocs/R-Intro.html</loc>
+         <lastmod>2026-08-20</lastmod>
+    </url>
+    <url>
+         <loc>https://smithsonian.github.io/NZCBI-DataComputingDocs/RStudio-Hydra.html</loc>
+         <lastmod>2026-08-20</lastmod>
+    </url>
+    <url>
+         <loc>https://smithsonian.github.io/NZCBI-DataComputingDocs/data-lifecycle.html</loc>
+         <lastmod>2026-08-20</lastmod>
+    </url>
+    <url>
+         <loc>https://smithsonian.github.io/NZCBI-DataComputingDocs/data-management.html</loc>
+         <lastmod>2026-08-20</lastmod>
+    </url>
+    <url>
+         <loc>https://smithsonian.github.io/NZCBI-DataComputingDocs/github.html</loc>
+         <lastmod>2026-08-20</lastmod>
+    </url>
+    <url>
+         <loc>https://smithsonian.github.io/NZCBI-DataComputingDocs/hydra.html</loc>
+         <lastmod>2026-08-20</lastmod>
+    </url>
+</urlset>
