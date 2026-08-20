@@ -24,18 +24,22 @@ A best practice is to document these plans in a living document that is shared w
 
 ## Step 2- Generation
 
-From direct human observation in the field to expanding networks of remote sensors to cutting edge lab bench recordings, NZCBI researchers regularly create the raw data that downstream analyses are based on. This gives our teams control over the details of that data creation including:
+From direct field observations and expanding networks of remote sensors to cutting-edge laboratory recordings, NZCBI researchers routinely generate the raw data that underpin downstream analyses. Because we collect much of these data ourselves, our teams have direct control over key aspects of data generation, including:
 
-* measurement unit
-* resolution
-* recording frequency\*
-* file format
+* Measurement unit
+* Resolution
+* Recording frequency\*
+* File format
 
-As such it is vital to create survey/observation protocols that consider the downstream uses of what is being generated for both the current project and others in the future.
+This level of control makes it essential to design survey and observation protocols with downstream applications in mind. Decisions made during data collection can affect not only the success of the current project but also the future value and reusability of the data for other research efforts.
 
-Our teams also have control over the metadata that accompanies the primary observations. This accompanying information can be just as important as the observation itself and thus deserves similar levels of consideration for future uses.  One of the key discussions during the initial Data Technology Workshop was the creation of metadata standards to be used across the unit so keep an eye out in this space as materials are developed.
+Researchers also control the metadata that accompany primary observations. This contextual information can be just as important as the observations themselves, helping others understand, interpret, and reuse the data. As a result, metadata should be planned and documented with the same level of care given to primary data collection.
 
-\*Depending on the logistical details of the observation instrument, there may be a need to distinguish between observing and collecting such that data that is initially recorded is dropped prior to the downstream storage steps.
+One of the key topics discussed during the initial Data Technology Workshop was the development of unit-wide metadata standards. As those standards and supporting materials are developed, updates will be shared with the broader team.
+
+\*Depending on the capabilities and configuration of the observation instrument, it may be necessary to distinguish between observing and collecting data. In some cases, data may be recorded initially but filtered or discarded before being stored for downstream use.
+
+
 
 ## Step 3- Acquire
 
