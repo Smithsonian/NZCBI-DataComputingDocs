@@ -1,9 +1,12 @@
 # NZCBI Data \& Computing Documentation 💻💡▶️🔆
 
-Practical data \& computing documentation for researchers at Smithsonian's National Zoo \& Conservation Biology Institute. Materials include various guides to assist our community with the better management and analysis of data being collected.
+Practical data \& computing documentation for researchers at Smithsonian's National Zoo \& Conservation Biology Institute, developed in collaboration with the Office of Digital and Innovation. Materials include guides to assist the community with better management and analysis of data being collected across ecosystems globally.
 
 ![R](https://img.shields.io/badge/Language-R-blue)
 ![Context](https://img.shields.io/badge/Focus-Data%20Computing-orange)
+
+## Overview
+The repo and resulting website provides general information to direct NZCBI researchers towards resources available, with links to key contacts to request help or ask additional questions.  Please note that these resources are part of a Community of Practice (COP).  Should you find issues or wish to contribute, please use the tools in GitHub to track issues or conduct a pull request to submit changes for review.  A brief summary of each of the Research Guides is provided below.    
 
 ## Research Guides
 1. **Guide 1 - Understanding the Data Lifecycle:** Learn about all steps of a data life cycle, inclusive of Plan & Design, Collect & Create, Analyze & Collaborate, Evaluate & Archive, Share & Disseminate, and Publish & Reuse.
